@@ -32,13 +32,13 @@ const AboutImageWrapper = styled.div`
 
 const About = ({ data }) => {
   const { about, AboutImage } = data
-  const { title, bio } = about
-
+  const { title, tagline, hobbies, intro } = about
+  console.log(about)
   return (
     <Layout>
-      <SEO title="About" description={bio} />
+      <SEO title="About" description={tagline} />
       <Banner title={title} variant="mono">
-        <h4>{bio}</h4>
+        <h4>{tagline}</h4>
         <Button
           to={socialLinks.linkedin.link}
           variant="color"
@@ -49,11 +49,41 @@ const About = ({ data }) => {
         </Button>
       </Banner>
       <Section>
-        <Container>
-          <AboutImageWrapper>
-            <Img fluid={AboutImage.childImageSharp.fluid} alt="me myself and I" />
-          </AboutImageWrapper>
-        </Container>
+        {intro.map((item, index) => {
+          const { heading, content } = intro[index]
+          return (
+            <AboutContainer key={`bio-${index}`}>
+              <AboutGrid justify="center">
+                <GridFlexItem md="8">
+                  <Title>{heading}</Title>
+                  <p>{content}</p>
+                </GridFlexItem>
+              </AboutGrid>
+            </AboutContainer>
+          )
+        })}
+      </Section>
+      <Section variant="inverse">
+        {hobbies.map((item, index) => {
+          const { heading, content } = hobbies[index]
+          return (
+            <div key={`bio-${index}`}>
+              <Container>
+                <AboutImageWrapper>
+                  <Img fluid={AboutImage.childImageSharp.fluid} alt="me myself and I" />
+                </AboutImageWrapper>
+              </Container>
+              <AboutContainer>
+                <AboutGrid justify="center">
+                  <GridFlexItem md="8">
+                    <Title>{heading}</Title>
+                    <p>{content}</p>
+                  </GridFlexItem>
+                </AboutGrid>
+              </AboutContainer>
+            </div>
+          )
+        })}
       </Section>
     </Layout>
   )
@@ -63,21 +93,34 @@ export const aboutQuery = graphql`
   query AboutQuery {
     about: aboutYaml {
       title
-      bio
-      currentPosition
-      email
-      phone
-      address
-    }
-    AboutImage: file (
-      relativePath: { eq: "vitormar.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
+      tagline
+      hobbies {
+        heading
+        content
+      }
+      intro {
+        heading
+        content
       }
     }
+      AboutImage: file (
+        relativePath: { eq: "vitormar.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1360) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      hobbyImage: file (
+        relativePath: { eq: "vmhobby.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1360) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
   }
 `
 

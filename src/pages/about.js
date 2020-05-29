@@ -31,9 +31,9 @@ const AboutImageWrapper = styled.div`
 `
 
 const About = ({ data }) => {
-  const { about, AboutImage } = data
-  const { title, tagline, hobbies, intro } = about
-  console.log(about)
+  const { about } = data
+  const { title, tagline, intro, hobbies } = about
+  console.log(hobbies)
   return (
     <Layout>
       <SEO title="About" description={tagline} />
@@ -52,11 +52,11 @@ const About = ({ data }) => {
         {intro.map((item, index) => {
           const { heading, content } = intro[index]
           return (
-            <AboutContainer key={`bio-${index}`}>
+            <AboutContainer key={`intro-${index}`}>
               <AboutGrid justify="center">
                 <GridFlexItem md="8">
                   <Title>{heading}</Title>
-                  <p>{content}</p>
+                    {content}
                 </GridFlexItem>
               </AboutGrid>
             </AboutContainer>
@@ -64,13 +64,13 @@ const About = ({ data }) => {
         })}
       </Section>
       <Section variant="inverse">
-        {hobbies.map((item, index) => {
-          const { heading, content } = hobbies[index]
+        {hobbies.map((hobby, index) => {
+          const { heading, content, image } = hobby
           return (
-            <div key={`bio-${index}`}>
+            <div key={`hobby-${index}`}>
               <Container>
                 <AboutImageWrapper>
-                  <Img fluid={AboutImage.childImageSharp.fluid} alt="me myself and I" />
+                <Img fluid={image.childImageSharp.fluid} />
                 </AboutImageWrapper>
               </Container>
               <AboutContainer>
@@ -94,33 +94,22 @@ export const aboutQuery = graphql`
     about: aboutYaml {
       title
       tagline
-      hobbies {
-        heading
-        content
-      }
       intro {
         heading
         content
       }
+      hobbies {
+        heading
+        content
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1120, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
     }
-      AboutImage: file (
-        relativePath: { eq: "vitormar.jpg" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 1360) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      hobbyImage: file (
-        relativePath: { eq: "vmhobby.jpg" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 1360) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
   }
 `
 

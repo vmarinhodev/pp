@@ -7,7 +7,7 @@ personalproject: false
 client: AmeTrade
 role: Web Developer / UI/UX Designer
 website:
-  url: 'https://www.ametrade.org'
+  url: 'https://ametrade.org/'
 source:
   url: 'http://github.com'
 featureImage: 'desk_ametrade_I.jpg'

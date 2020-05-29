@@ -6,8 +6,6 @@ completed: "2019"
 personalproject: false
 client: ''
 role: Web Developer / UI/ UX Designer
-website:
-  url: 'https://vmarinhodev.github.io/budgeter/'
 source:
   url: 'https://github.com/vmarinhodev/budgeter'
 featureImage: 'desk_budgeter.jpg'

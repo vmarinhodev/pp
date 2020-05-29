@@ -63,9 +63,11 @@ const Projects = ({ data: { project }, pageContext }) => {
         </Helmet>
         <Banner title={title} spacing={150} variant="color">
           <h4>{tagline}</h4>
-          <Button to={website.url} hasIcon={true} linksOut>
-          See Website
-          </Button>
+          {website && (
+            <Button to={website.url} hasIcon={true} linksOut>
+            See Website
+            </Button>
+          )}
         </Banner>
         <ProjectIntro details={introDetails} meta={introMeta} />
         <ProjectHighlight details={highlightDetails} />

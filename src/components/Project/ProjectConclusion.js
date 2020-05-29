@@ -59,9 +59,11 @@ const ProjectConclusion = ({ details, variant, meta}) => {
               <p>{content}</p>
             </GridFlexItem>
             <EndLinks>
+            {website && (
               <Button to={website.url} hasIcon={true} variant="color" linksOut>
                 View Website
               </Button>
+            )}
               { source && (
                 <Button to={source.url} linksOut>
                   View Code

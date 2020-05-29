@@ -70,7 +70,7 @@ export const bgs = {
   inverse: {
     light: css`
       background-color: ${colors.black};
-      color: ${colors.lightText};
+      color: ${colors.lightGray};
       h1,
       h2,
       h3 {

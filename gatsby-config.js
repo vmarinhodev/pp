@@ -48,6 +48,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transformer-yaml-full`,
+      options: {
+        plugins: [
+          `gatsby-yaml-full-markdown`,
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-root-import',
       options: {
         '@': path.join(__dirname, 'src'),

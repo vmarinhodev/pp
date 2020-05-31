@@ -17,7 +17,7 @@ export const socialLinks = {
   },
   linkedin: {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/vitor-marinho-5821501b/',
+    link: 'https://www.linkedin.com/in/vmarinhodev',
     icon: 'linkedin',
   },
   instagram: {

@@ -50,13 +50,15 @@ const About = ({ data }) => {
       </Banner>
       <Section>
         {intro.map((item, index) => {
-          const { heading, content } = intro[index]
+          const { heading, title, pone, ptwo } = intro[index]
           return (
             <AboutContainer key={`intro-${index}`}>
               <AboutGrid justify="center">
                 <GridFlexItem md="8">
                   <Title>{heading}</Title>
-                    {content}
+                     <h3>{title}</h3>
+                     <p>{pone}</p>
+                     <p>{ptwo}</p>
                 </GridFlexItem>
               </AboutGrid>
             </AboutContainer>
@@ -65,7 +67,7 @@ const About = ({ data }) => {
       </Section>
       <Section variant="inverse">
         {hobbies.map((hobby, index) => {
-          const { heading, content, image } = hobby
+          const { heading, title, pone, ptwo, image } = hobby
           return (
             <div key={`hobby-${index}`}>
               <Container>
@@ -77,7 +79,9 @@ const About = ({ data }) => {
                 <AboutGrid justify="center">
                   <GridFlexItem md="8">
                     <Title>{heading}</Title>
-                    <p>{content}</p>
+                     <h3>{title}</h3>
+                     <p>{pone}</p>
+                     <p>{ptwo}</p>
                   </GridFlexItem>
                 </AboutGrid>
               </AboutContainer>
@@ -96,11 +100,15 @@ export const aboutQuery = graphql`
       tagline
       intro {
         heading
-        content
+        title
+        pone
+        ptwo
       }
       hobbies {
         heading
-        content
+        title
+        pone
+        ptwo
         image {
           childImageSharp {
             fluid(maxWidth: 1120, quality: 90) {

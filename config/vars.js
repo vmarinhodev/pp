@@ -10,11 +10,6 @@ export const navItems = [
 ]
 
 export const socialLinks = {
-  codepen: {
-    label: 'Codepen',
-    link: 'https://codepen.io/',
-    icon: 'codepen',
-  },
   github: {
     label: 'Github',
     link: 'https://github.com/vmarinhodev/',
@@ -24,5 +19,10 @@ export const socialLinks = {
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/vitor-marinho-5821501b/',
     icon: 'linkedin',
+  },
+  instagram: {
+    label: 'Instagram',
+    link: 'https://www.instagram.com/vitormarinho/',
+    icon: 'instagram',
   },
 }

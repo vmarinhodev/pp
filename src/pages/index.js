@@ -30,8 +30,8 @@ const Index = ({ data: { projectos }}) => {
         subTitle="hello, world"
       >
         <h4>
-          I am passionate about web development, like solving problems, and
-          making the Internet a more beautiful place.
+          Frontend oriented fullstack web developer.
+          Always in pursuit for efficiency through simplicity.
         </h4>
         <Button variant="color" to="/projects" hasIcon={true}>
           See Work

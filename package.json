@@ -13,6 +13,7 @@
     "gatsby-cli": "^2.12.40",
     "gatsby-image": "^2.2.45",
     "gatsby-paginate": "^1.1.1",
+    "gatsby-plugin-canonical-urls": "^2.3.3",
     "gatsby-plugin-google-analytics": "^2.3.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-lodash": "^3.1.22",

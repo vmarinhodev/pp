@@ -54,6 +54,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.vmarinho.dev`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-root-import',
       options: {
         '@': path.join(__dirname, 'src'),

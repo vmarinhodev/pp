@@ -2,15 +2,15 @@
 - intro:  
     - heading:  Thank's for visiting. 
       title:  A little about myself
-      pone:   I am a Front-end developer focused on turning ideas into practical software.
-              I'm the passionate about creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
-      ptwo:   After graduating from Middlesex University in 2015 with a B.A. Hons in Web Development
+      pone:   I am a front end developer focused on turning ideas into practical software.
+              I'm passionate about creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
+      ptwo:   After graduating from SAE Institute, London (Middlesex University) in 2015 with a B.A. Hons in Web Development,
               I started working at AmeTrade where I worked as a Full-Stack developer for 4 years.
               During my time there, I have worked with different languages, technologies and platforms.
     - heading:  Front End development
       title:  Skills & Tools 
       pone:   I currently work with a variety of languages and frameworks including JavaScript, React, Redux, Gatsby, Primisc and Wordpress. 
-      ptwo:   I develop React static site generator GatsbyJS since
+      ptwo:   This responsive PWA is developed with React static site generator GatsbyJS, optimised for a fast page load, hosted on Netlify and served via github. Current Average load is .
   hobbies:  
     - heading:  Interests
       title:    Bobbers & Advanced Design 

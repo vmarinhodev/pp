@@ -16,7 +16,7 @@ module.exports = {
   },
   googleAnalyticsID: 'UA-168199555-1',
   themeColor: '#00c6ff',
-  backgroundColor: '#00c6ff',
+  backgroundColor: '#f7fafc',
   siteRss: '/rss.xml',
   social: {
     twitter: '@gufufu',

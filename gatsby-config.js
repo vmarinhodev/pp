@@ -75,8 +75,8 @@ module.exports = {
         name: siteConfig.defaultTitle,
         short_name: siteConfig.shortname,
         start_url: siteConfig.prefix,
-        background_color: `#ffffff`,
-        theme_color: `#0c66c0`,
+        background_color: siteConfig.backgroundColor,
+        theme_color: siteConfig.themeColor,
         display: `fullscreen`,
         icon: `src/images/vm-icon.png`, // This path is relative to the root of the site.
       },

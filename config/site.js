@@ -11,10 +11,10 @@ module.exports = {
   socialLinks: {
     twitter: 'http://www.twitter.com/gufufu',
     github: 'https://github.com/vmarinho',
-    linkedin: 'https://www.linkedin.com/in/vitormarinho',
+    linkedin: 'https://www.linkedin.com/in/vmarinhodev',
     instagram: 'https://instagram.com/vitormarinho',
   },
-  googleAnalyticsID: 'UA-88875900-1',
+  googleAnalyticsID: 'UA-168199555-1',
   themeColor: '#00c6ff',
   backgroundColor: '#00c6ff',
   siteRss: '/rss.xml',

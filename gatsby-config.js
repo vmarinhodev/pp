@@ -48,12 +48,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-168199555-1",
-      },
-    },
-    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://www.vmarinho.dev`,
@@ -78,13 +72,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: siteConfig.name,
+        name: siteConfig.defaultTitle,
         short_name: siteConfig.shortname,
         start_url: siteConfig.prefix,
         background_color: `#ffffff`,
         theme_color: `#0c66c0`,
-        display: `minimal-ui`,
+        display: `fullscreen`,
         icon: `src/images/vm-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-168199555-1",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

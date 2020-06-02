@@ -1,34 +1,26 @@
 ---
 - intro:  
-    - heading:  A little about myself 
-      title:  The beginning
-      pone:   My name is Vitor Marinho. I am a Front-end developer
-              focused on turning ideas into practical software.
-      ptwo:   After graduating from Middlesex University in 2015 with a B.A. in Web Development
-              I started working for AmeTrade where I worked as a Full-Stack developer.
-    - heading:  second intro heading
-      title:  BA Honours  
-      pone:   I got a job as a "developer", where I stayed for almost 4 years, 
-      ptwo:   I have over 5 years experience building websites and applications. I currently work with a variety of languages and frameworks including JavaScript, React, Redux, Gatsby, Primisc and Wordpress.
+    - heading:  Thank's for visiting. 
+      title:  A little about myself
+      pone:   I am a Front-end developer focused on turning ideas into practical software.
+              I'm the passionate about creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
+      ptwo:   After graduating from Middlesex University in 2015 with a B.A. Hons in Web Development
+              I started working at AmeTrade where I worked as a Full-Stack developer for 4 years.
+              During my time there, I have worked with different languages, technologies and platforms.
+    - heading:  Front End development
+      title:  Skills & Tools 
+      pone:   I currently work with a variety of languages and frameworks including JavaScript, React, Redux, Gatsby, Primisc and Wordpress. 
+      ptwo:   I develop React static site generator GatsbyJS since
   hobbies:  
-    - heading:  hobby heading 
-      title:    "Web Design & Web Development" 
-      pone:     I got a job as a "developer", where I stayed for almost 4 years, 
-      ptwo:     After learning programming, database and querying fundamentals in high-school,
-                I have been working with different languages, technologies and platforms
-                front-end (HTML/CSS, JS, React, GatsbyJS)
-                back-end (php, WordPress)
-                API (php, MySQL, xml, json, rest)
-                I'm the passionate about creating slick websites work well and look good, and have been working with the React static site generator GatsbyJS since
-      image:  "./vitormar.jpg"
-    - heading:  second hobby heading 
+    - heading:  Interests
       title:    Bobbers & Advanced Design 
-      pone:     I got a job as a "developer", where I stayed for almost 4 years, 
-      ptwo:     but I only developed websites with Wordpress custom themes
-                After finishing my BA Honours in "Web Design & Web Development" 
-                I got a job as a "developer", where I stayed for almost 4 years, 
-                but I only developed websites with Wordpress custom themes
+      pone:     I own a Triumph Bonneville 1971 (bobber) and a Chevrolet pickup 1953 which I ride regularly.
+      image:  "./vitormar.jpg"
+    - heading:  Fun Facts
+      title:    Elvira
+      pone:     My motorcycle was named after my Grandmother "Elvira"
+      ptwo:     When not sitting at the desk I enjoy watching car shows on tv.
       image:  "./vmhobbies.jpg"
-  title:  Vitor Marinho
-  tagline:  Hi there! Thank's for visiting.
+  title:  Hi there!
+  tagline:  Nice to meet you
 ...

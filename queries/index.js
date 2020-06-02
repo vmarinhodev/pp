@@ -28,7 +28,6 @@ module.exports = `
               childImageSharp {
                 fluid {
                   aspectRatio
-                  base64
                   originalImg
                   originalName
                   presentationHeight
@@ -51,7 +50,6 @@ module.exports = `
                     childImageSharp {
                       fluid {
                           aspectRatio
-                          base64
                           originalImg
                           originalName
                           presentationHeight
@@ -75,7 +73,6 @@ module.exports = `
                     childImageSharp {
                       fluid {
                           aspectRatio
-                          base64
                           originalImg
                           originalName
                           presentationHeight
@@ -100,7 +97,6 @@ module.exports = `
                     childImageSharp {
                       fluid {
                           aspectRatio
-                          base64
                           originalImg
                           originalName
                           presentationHeight

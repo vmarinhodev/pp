@@ -26,6 +26,7 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -62,7 +63,6 @@ module.exports = {
         config: path.join(__dirname, 'config'),
       },
     },
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-yaml`,
     `gatsby-plugin-react-helmet`,

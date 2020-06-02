@@ -6,7 +6,7 @@ completed: "2020"
 personalproject: false
 client: Mounting Plaque
 role: Web Developer / UI/ UX Designer
-featureImage: 'desk_mountingplaque_I.jpg'
+featureImage: 'desk_mountingplaque_I.jpg' 
 tags:
   - gatsby
   - wordpress

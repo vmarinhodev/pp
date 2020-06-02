@@ -8,8 +8,6 @@ client: MRS Oficina
 role: Web Developer / UI/ UX Designer
 website:
   url: 'http://mrsoficina.com'
-source:
-  url: 'http://github.com/vmarinho'
 featureImage: 'mrshomage.jpg'
 tags:
   - gatsby

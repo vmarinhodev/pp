@@ -2,7 +2,7 @@
 path: '/mounting-plaque'
 title: Mounting Plaque
 tagline: animals and woods
-completed: "2020"
+completed: "2015"
 personalproject: false
 client: Mounting Plaque
 role: Web Developer / UI/ UX Designer

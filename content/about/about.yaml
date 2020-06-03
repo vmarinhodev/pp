@@ -5,22 +5,30 @@
       pone:   I am a front end developer focused on turning ideas into practical software.
               I'm passionate about creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
       ptwo:   After graduating from SAE Institute, London (Middlesex University) in 2015 with a B.A. Hons in Web Development,
-              I started working at AmeTrade where I worked as a Full-Stack developer for 4 years.
+              I started working at AmeTrade where I've been working as a Full-Stack developer for 4 years.
               During my time there, I have worked with different languages, technologies and platforms.
     - heading:  Front End development
       title:  Skills & Tools 
       pone:   I currently work with a variety of languages and frameworks including JavaScript, React, Redux, Gatsby, Primisc and Wordpress. 
-      ptwo:   This responsive PWA is developed with React static site generator GatsbyJS, optimised for a fast page load, hosted on Netlify and served via github. Current Average load is .
+      ptwo:   This Progressive Web App (PWA) is developed with React static site generator GatsbyJS, optimised for a fast page load, hosted on Netlify and served via github.
+              Most current interests include Docker, Kubernetes and Microservices.
   hobbies:  
     - heading:  Interests
-      title:    Bobbers & Advanced Design 
-      pone:     I own a Triumph Bonneville 1971 (bobber) and a Chevrolet pickup 1953 which I ride regularly.
+      title:    Arts & Crafts
+      pone:     I enjoy being creative and active. 
+                I get out to exhibitions and events in a broad spectrum of creative media as often as possible.
+                Interdesciplinary designer who likes to solve problems, I am passionate about design.
+                Living, learning, & leveling up one day at a time.
       image:  "./vitormar.jpg"
-    - heading:  Fun Facts
-      title:    Elvira
-      pone:     My motorcycle was named after my Grandmother "Elvira"
-      ptwo:     When not sitting at the desk I enjoy watching car shows on tv.
-      image:  "./vmhobbies.jpg"
+    - heading:  Offline Life
+      title:    Bobbers & Advanced Design
+      pone:     |
+                I own a Triumph Bonneville 1971 (bobber) motorcycle and a 1953 Chevrolet pickup 'Advanced Design' which I ride regularly.
+                 (Elvira) named after my Grandmother was designed and built by my Father and myself.
+      ptwo:     |
+                I Lived in London for the last 10 years. 
+                When not sitting at the desk I enjoy watching car shows "GYST".
+      image:  "./vmhobbiel.jpg"
   title:  Hi there!
   tagline:  Nice to meet you
 ...

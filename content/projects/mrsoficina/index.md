@@ -2,7 +2,7 @@
 path: '/mrsoficina'
 title: MRS Oficina
 tagline: Customizing Motorcycles
-completed: "2020"
+completed: "2019"
 personalproject: false
 client: MRS Oficina
 role: Web Developer / UI/ UX Designer

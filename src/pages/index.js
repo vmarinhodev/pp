@@ -76,7 +76,7 @@ const Index = ({ data: { projectos }}) => {
 
 export const projectQuery = graphql`
   query IndexQuery {
-    projectos: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___completed] }) {
+    projectos: allMarkdownRemark(limit: 3, sort: { order: DESC, fields: [frontmatter___completed] }) {
       edges {
         node {
           frontmatter {

@@ -24,9 +24,9 @@ body:
     primary:
       title: mixify intro title
       subtitle: Lets get Mixing
-      content: Mixins is drinks planning app a realistic web application which utilizes many of the main features of JavaScript.
-      From a user's point of view, Mixins is an online "Cocktail receipe" book.
-      As responsiveness is a major part of a sound user experience, the UI is responsive, meaning it works on all types of devices.
+      content: |
+              Mixins is drinks planning app a realistic web application which utilizes many of the main features of JavaScript. From a user's point of view, Mixins is an online Cocktail recipe book. 
+              As responsiveness is a major part of a sound user experience, the UI is responsive, meaning it works on all types of devices.
       image: 'desk_mixins.jpg'
   ProjectBodyHighlight:
     primary:
@@ -43,11 +43,9 @@ body:
       - Progressive image loading
   ProjectBodyConclusion:
     primary:
-      title: mixify Conclusion title
+      title:  mixify Conclusion title
       subtitle: Coding shall be 
-      content: There was definately a leraning curve, and it was mostly an exercise to try and undertand how to develop with JavaScript.
-      One of the biggest challenges on this project was managing a lot of different data.
-      Some of the features of the app could benefit from some interaction design and simple animations. 
+      content:  There was definately a 
       image: 'mixins_iso.jpg'
 ---
 

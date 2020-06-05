@@ -37,6 +37,9 @@ const Project = ({ details, index, type, excerpt }) => {
         <ProjectCardDetails>
           <ProjectCardTitle>{title}</ProjectCardTitle>
           <ProjectWideExcerpt>{excerpt}</ProjectWideExcerpt>
+          <Button variant="color" to={`${path}`}>
+            Read More
+          </Button>
           {website && (
             <Button type="ghost" to={website.url} linksOut>
               View Site

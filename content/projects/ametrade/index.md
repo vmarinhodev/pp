@@ -2,10 +2,10 @@
 path: '/ametrade'
 title: Ametrade
 tagline: Leading Conference & Exhibition Organisers
-completed: "2020"
+completed: "2019"
 personalproject: false
 client: AmeTrade
-role: Web Developer / UI/UX Designer
+role: Web Developer, UI/UX Designer
 website:
   url: 'https://ametrade.org/'
 featureImage: 'desk_ametrade_I.jpg'
@@ -18,23 +18,31 @@ body:
     primary:
       title: Ametrade Leading Events Organizer
       subtitle: WordPress Multisite Network
-      content: Ametrade was launched over 20 years ago and have established themselves as a leader organising world-class industry focused events. Their solutions serve over 100 thousand professionals around the world to showcase products and services. Building a centralized content management system, Media management in one place shared media across the multisite Updating the outdated look and feel of the blogs and create a better and modern vision Audience International had to support differente languages The booking system is a flexible form with several dropdowns
+      content: |
+              Ametrade was launched over 20 years ago and have established themselves as a leader organising world-class industry focused events. Their solutions serve over 100 thousand professionals around the world to showcase products and services. 
+              
+              I was brought on board to help put in place a more nimble and redundant development workflow and work with the team to define a more robust visual language for the brand.
       image: 'desk_ametrade_I.jpg'
   ProjectBodyHighlight:
     primary:
-      title: Effective use of visual elements
-      subtitle: The subtitle for Highlight
-      content: A complete re-design and development of Ametrade online presence. A key aim for this project was to deliver an outstanding brand & interactive online experience for users, one that allowed the user to simply and quickly access information on Ametrade services. Visual Hierarchy, Choosing UI Colors, clear data presentation via menus, catalogs, etc. technical and server-side considerations. all WordPress Core, plugins and themes updates, and user management can be done from one centralized place, instead of having the need to update each site separately.
+      title: My time at Ametrade
+      subtitle: Making it more immersive
+      content: |
+              During my time working for the company I have re-designed Ametrade online presence. A key aim was to deliver an outstanding & interactive online experience for users, one that allowed them to simply and quickly access information on AmeTrade services.
+              
+              I've implemented a Multisite setting so WordPress Core, plugins and themes updates, and user management can be done from one centralized place, instead of having the need to update each site separately.
       image: 'ameper_iii.jpg'
     tools:
       - wordpress
+      - javascript
       - php
-      - gatsby
+      - sql
   ProjectBodyConclusion:
     primary:
-      title: follow the brand identity requirements
-      subtitle: Successfully Redesigned
-      content: Ametrade brief for the new corporate website was that it must be clear, clean and highlight its brand, ethics and strength in the events market. A careful look into the style definitions of the main site and coming up with a similar look and feel for the new theme
+      title: Reasoning
+      subtitle: Everything has its place
+      content: |
+              I've enjoyed my time at AmeTrade designing interfaces that satisfy both client and user needs while growing AmeTrade's brand and visual identity to reach new markets and clientele.
       image: 'ameper_ii.jpg'
 ---
 

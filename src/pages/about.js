@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
+import paragraphs from 'lines-to-paragraphs'
 import Img from 'gatsby-image'
 import {
   Banner,
@@ -50,15 +51,14 @@ const About = ({ data }) => {
       </Banner>
       <Section>
         {intro.map((item, index) => {
-          const { heading, title, pone, ptwo } = intro[index]
+          const { heading, title, content } = intro[index]
           return (
             <AboutContainer key={`intro-${index}`}>
               <AboutGrid justify="center">
                 <GridFlexItem md="8">
                   <Title>{heading}</Title>
                      <h3>{title}</h3>
-                     <p>{pone}</p>
-                     <p>{ptwo}</p>
+                     <p dangerouslySetInnerHTML={{ __html: paragraphs(content) }} />
                 </GridFlexItem>
               </AboutGrid>
             </AboutContainer>
@@ -67,7 +67,7 @@ const About = ({ data }) => {
       </Section>
       <Section variant="inverse">
         {hobbies.map((hobby, index) => {
-          const { heading, title, pone, ptwo, image } = hobby
+          const { heading, title, content, image } = hobby
           return (
             <div key={`hobby-${index}`}>
               <Container>
@@ -80,8 +80,7 @@ const About = ({ data }) => {
                   <GridFlexItem md="8">
                     <Title>{heading}</Title>
                      <h3>{title}</h3>
-                     <p>{pone}</p>
-                     <p>{ptwo}</p>
+                     <p dangerouslySetInnerHTML={{ __html: paragraphs(content) }} />
                   </GridFlexItem>
                 </AboutGrid>
               </AboutContainer>
@@ -101,14 +100,12 @@ export const aboutQuery = graphql`
       intro {
         heading
         title
-        pone
-        ptwo
+        content
       }
       hobbies {
         heading
         title
-        pone
-        ptwo
+        content
         image {
           childImageSharp {
             fluid(maxWidth: 1120, quality: 90) {

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { withPrefix } from 'gatsby'
 import { format } from 'date-fns'
+import paragraphs from 'lines-to-paragraphs'
 
 import { Container, GridFlex, GridFlexItem, Title } from '@components'
 import Section from '@components/Section'
@@ -108,7 +109,7 @@ const ProjectIntro = ({ details, meta, variant }) => {
           <GridFlexItem md="7">
             <Title>{title}</Title>
             <h3>{subtitle}</h3>
-            <p>{content}</p>
+            <p dangerouslySetInnerHTML={{ __html: paragraphs(content) }} />
           </GridFlexItem>
           <ProjectMeta>
             <ProjectMetaItem>

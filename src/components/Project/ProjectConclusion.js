@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import paragraphs from 'lines-to-paragraphs'
 
 import {
   Button,
@@ -56,7 +57,7 @@ const ProjectConclusion = ({ details, variant, meta}) => {
             <GridFlexItem md="7">
               <Title>{title}</Title>
               <h3>{subtitle}</h3>
-              <p>{content}</p>
+              <p dangerouslySetInnerHTML={{ __html: paragraphs(content) }} />
             </GridFlexItem>
             <EndLinks>
             {website && (

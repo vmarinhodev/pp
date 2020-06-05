@@ -1,7 +1,7 @@
 ---
-path: '/mixify'
-title: Mixify
-tagline: mixing js
+path: '/mixins'
+title: Mixins
+tagline: Online Cocktail Recipe
 completed: "2020"
 personalproject: true
 client: ""
@@ -13,39 +13,41 @@ source:
 featureImage: 'desk_mixins.jpg'
 tags:
   - html
-  - js
   - css
-  - gatsby
+  - js
+  - npm
 highlights:
   title: highlights title
   tagline: highlights tagline
 body:
   ProjectBodyIntro:
     primary:
-      title: mixify intro title
-      subtitle: Lets get Mixing
+      title: Lets get Mixing 
+      subtitle: Mixing Code & Drinks
       content: |
-              Mixins is drinks planning app a realistic web application which utilizes many of the main features of JavaScript. From a user's point of view, Mixins is an online Cocktail recipe book. 
-              As responsiveness is a major part of a sound user experience, the UI is responsive, meaning it works on all types of devices.
+              Mixins is a realistic, responsive web app which utilizes many of the main features of JavaScript. From a user's point of view, Mixins is an online Cocktail recipe book.
       image: 'desk_mixins.jpg'
   ProjectBodyHighlight:
     primary:
-      title: mixify Highlight title
-      subtitle: Project for the Knowledge
-      content:  This JavaScript project is coded with Vanilla JavaScript along with HTML and CSS.
-                Building on the Budget Project, Mixins is a more advanced project sample. It is accessible from a desktop, tablet and mobile devices.
+      title: The Project
+      subtitle: Simple drinks library
+      content:  |
+              This project is coded with Vanilla JavaScript along with HTML and CSS using a MVC pattern. The user can search for a drink recipe, the application fetches data from the "TheCocktailDB" API. 
+              
+              The user can then add the recipe to the favourites list for later access, this information will be saved on "localStorage".
       image: 'mixins_per.jpg'
     tools:
-      - js
-      - react
-      - gatsby
-      - Markdown
-      - Progressive image loading
+      - JavaScript
+      - html
+      - css
   ProjectBodyConclusion:
     primary:
-      title:  mixify Conclusion title
+      title:  Reflect
       subtitle: Coding shall be 
-      content:  There was definately a 
+      content:  |
+              This was a fun project into the javaScript and API's fields.  Working on Mixins has given me the opportunity to really experiment with JavaScript and API's, and better understanding of how to apply them in a way that is effective and consistent.
+              
+              Although only a single page, I had the chance to learn how to create a library that can be integrated in different environments.
       image: 'mixins_iso.jpg'
 ---
 

@@ -1,33 +1,37 @@
 ---
 - intro:  
-    - heading:  Thank's for visiting. 
+    - heading:  Thanks for visiting 
       title:  A little about myself
-      pone:   I am a front end developer focused on turning ideas into practical software.
+      content:  |
+              I am a Front End and UI/UX Developer, Accessibility advocate, JAMStack fan. Focused on turning ideas into practical software,
               I'm passionate about creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
-      ptwo:   After graduating from SAE Institute, London (Middlesex University) in 2015 with a B.A. Hons in Web Development,
-              I started working at AmeTrade where I've been working as a Full-Stack developer for 4 years.
+              
+              After graduating from SAE Institute, London (Middlesex University) in 2015 with a B.A. Hons in Web Development, I started working at AmeTrade where I've been working as a Full-Stack developer for over 4 years.
               During my time there, I have worked with different languages, technologies and platforms.
     - heading:  Front End development
       title:  Skills & Tools 
-      pone:   I currently work with a variety of languages and frameworks including JavaScript, React, Redux, Gatsby, Primisc and Wordpress. 
-      ptwo:   This Progressive Web App (PWA) is developed with React static site generator GatsbyJS, optimised for a fast page load, hosted on Netlify and served via github.
-              Most current interests include Docker, Kubernetes and Microservices.
+      content:  |
+              I currently work with a variety of languages and frameworks including JavaScript, React, Redux, Gatsby, Primisc and Wordpress.
+              This portfolio is a static PWA (Progressive Web App) developed with Gatsby, optimised for a fast page load, hosted on Netlify.
+              
+              My most current interests include: Serveless Stack, Docker, Kubernetes and Microservices.
   hobbies:  
     - heading:  Interests
       title:    Arts & Crafts
-      pone:     I enjoy being creative and active. 
+      content:  |
+                I am passionate about design and enjoy being actively creative, and believe I am a Interdesciplinary designer who likes to solve problems.
                 I get out to exhibitions and events in a broad spectrum of creative media as often as possible.
-                Interdesciplinary designer who likes to solve problems, I am passionate about design.
-                Living, learning, & leveling up one day at a time.
+                
+                Living, learning & leveling up one day at a time.
       image:  "./vitormar.jpg"
     - heading:  Offline Life
       title:    Bobbers & Advanced Design
-      pone:     |
+      content:  |
                 I own a Triumph Bonneville 1971 (bobber) motorcycle and a 1953 Chevrolet pickup 'Advanced Design' which I ride regularly.
-                 (Elvira) named after my Grandmother was designed and built by my Father and myself.
-      ptwo:     |
-                I Lived in London for the last 10 years. 
-                When not sitting at the desk I enjoy watching car shows "GYST".
+                Elvira, the motorcycle (named after my Grandmother) was designed and built by my Father and myself.
+
+                I lived in London, United Kingdom for the last 10 years and moved to Den Haag, The Netherlands at the beginning of 2020. 
+                When not sitting at the desk I enjoy watching car shows "GYSOT".
       image:  "./vmhobbiel.jpg"
   title:  Hi there!
   tagline:  Nice to meet you

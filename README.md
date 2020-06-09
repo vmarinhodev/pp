@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.vmarinho.dev">
-    <img alt="vmarinho" src="https://www.vmarinho.dev/src/images/vm-icon.png/" width="60" />
+    <img alt="vmarinho" src="src/images/vm-icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">

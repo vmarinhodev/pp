@@ -21,7 +21,7 @@ import {
 
 
 const Project = ({ details, index, type, excerpt }) => {
-  console.log(excerpt)
+  
   const { title, path, website, featureImage} = details
   const { src } = featureImage.childImageSharp.fluid
   const isEven = index % 2 === 0

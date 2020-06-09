@@ -21,7 +21,6 @@ const ProjectsHeader = styled.div`
 
 const Index = ({ data: { projectos }}) => {
   const projects = projectos.edges
-  console.log(projects)
   return (
     <Layout>
       <Banner

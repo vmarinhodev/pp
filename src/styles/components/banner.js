@@ -20,7 +20,7 @@ const wrapper = css`
 `
 
 const heading = css`
-  color: ${props => props.theme.colors.lightHeadingText};
+  color: ${props => props.theme.colors.darkText};
   font-family: ${props => props.theme.fonts.heading};
   font-size: ${remCalc(48)};
   font-weight: bold;
@@ -40,7 +40,7 @@ const content = css`
   h4 {
     font-weight: 400;
     margin-bottom: 0.5em;
-    color: ${props => props.theme.colors.lightHeadingText};
+    color: ${props => props.theme.colors.darkText};
   }
 `
 

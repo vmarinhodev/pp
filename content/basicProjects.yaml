@@ -4,22 +4,22 @@
   client: "Corks & Screws"
   personalproject: false
   link:
-    url: 'http://google.com'
+    url: 'https://github.com/vmarinhodev/'
   source:
-    url: 'http://github.com'
+    url: 'https://github.com/vmarinhodev/'
 - title: Parapupi Cogumelos
   role: Designer, UX/UI, Developer
   completed: '2019'
   client: Corks & Screws
   personalproject: true
   link:
-    url: 'http://google.com'
+    url: 'https://github.com/vmarinhodev/'
   source:
-    url: 'http://github.com'
+    url: 'https://github.com/vmarinhodev/'
 - title: hey Project
   role: Designer, UX/UI, Developer
   completed: '2017'
   client: PPE's
   personalproject: true
   source:
-    url: 'http://github.com'
+    url: 'https://github.com/vmarinhodev/'

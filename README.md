@@ -5,7 +5,8 @@
   </a>
 </p>
 <h1 align="center">
-  Vitor Marinho Personal Portfolio
+  Vitor Marinho 
+  Personal Portfolio
 </h1>
 
 About this Website

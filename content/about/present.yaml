@@ -1,0 +1,34 @@
+---
+- intro:  
+    - heading:  Present
+      title:  What I am Doing at the moment
+      content:  |
+              At the present moment I am a Front End Developer for UW-S, turning ideas into practical software.
+              I've been part of the UW-s team for the last two years, creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
+              
+              After graduating from SAE Institute, London (Middlesex University) in 2015 with a B.A. Hons in Web Development, I started working at AmeTrade where I've been working as a Full-Stack (LAMP Stack) developer for over 4 years.
+              During my time there, I have worked with different languages, technologies and platforms.
+    - heading:  OctoCast
+      title:  Narrowcasting Software
+      content:  |
+              OctoCast is an innovative CMS that gives you control over a narrowcasting setup, whether it concerns one screen or hundreds.
+              Rights management gives users the opportunity to post messages nationally, regionally or locally.
+              For example, a head office can post nationally, while an entrepreneur with OctoCast can easily independently create and place local messages for his store.
+              Naturally, our software is prepared for any desired screen size and video resolution.
+  hobbies:  
+    - heading:  Kids Club
+      title:    Games & Crafts
+      content:  |
+                The KidsClub takes children on an interactive game adventure
+                Make shopping fun, playful and educational for young children with the KidsClub.
+                The solution for parent and child to do their shopping in a relaxed manner.
+      image:  "./vitormar.jpg"
+    - heading:  De Company
+      title:    from idea to content
+      content:  |
+                UW-S creates communication solutions that are innovative in development, creative in concept, strong in content and off the beaten track.
+                 help supermarkets distinguish themselves locally through the combined power of digital in-store communication, local knowledge and relevant content.
+      image:  "./vmhobbiel.jpg"
+  title:  Hi there!
+  tagline:  Nice to meet you
+...

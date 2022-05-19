@@ -1,5 +1,9 @@
 export const navItems = [
   {
+    label: 'present',
+    slug: 'present',
+  },
+  {
     label: 'about',
     slug: 'about',
   },

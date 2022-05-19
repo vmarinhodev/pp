@@ -24,7 +24,7 @@ const AboutContainer = styled(Container)`
   }
 `
 
-const PresentGrid = styled(GridFlex)`
+const AboutGrid = styled(GridFlex)`
   padding-bottom: ${props => props.theme.spacing.section.md};
 `
 const AboutImageWrapper = styled.div`
@@ -37,7 +37,7 @@ const Present = ({ data }) => {
   console.log('hobbies', hobbies)
   return (
     <Layout>
-      <SEO title="Present" description={tagline} />
+      <SEO title="About" description={tagline} />
       <Banner title={title} variant="mono">
         <h4>{tagline}</h4>
         <Button
@@ -46,7 +46,7 @@ const Present = ({ data }) => {
           hasIcon={true}
           linksOut
         >
-          link to work
+          LinkedIn Resume
         </Button>
       </Banner>
       <Section>
@@ -54,7 +54,7 @@ const Present = ({ data }) => {
           const { heading, title, content } = intro[index]
           return (
             <AboutContainer key={`intro-${index}`}>
-              <PresentGrid justify="center">
+              <AboutGrid justify="center">
                 <GridFlexItem md="8">
                   <Title>{heading}</Title>
                      <h3>{title}</h3>
@@ -76,7 +76,7 @@ const Present = ({ data }) => {
                 </AboutImageWrapper>
               </Container>
               <AboutContainer>
-                <PresentGrid justify="center">
+                <AboutGrid justify="center">
                   <GridFlexItem md="8">
                     <Title>{heading}</Title>
                      <h3>{title}</h3>
@@ -93,8 +93,8 @@ const Present = ({ data }) => {
 }
 
 export const aboutQuery = graphql`
-  query AboutQuery {
-    about: aboutYaml {
+  query PresentQuery {
+    present: presentYaml {
       title
       tagline
       intro {

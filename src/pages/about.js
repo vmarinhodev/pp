@@ -34,7 +34,7 @@ const AboutImageWrapper = styled.div`
 const About = ({ data }) => {
   const { about } = data
   const { title, tagline, intro, hobbies } = about
-  console.log(hobbies)
+  console.log('hobbies', hobbies)
   return (
     <Layout>
       <SEO title="About" description={tagline} />
@@ -46,7 +46,7 @@ const About = ({ data }) => {
           hasIcon={true}
           linksOut
         >
-          LinkedIn Resume
+          LinkedIn Resumees
         </Button>
       </Banner>
       <Section>

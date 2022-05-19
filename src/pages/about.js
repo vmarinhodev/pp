@@ -46,7 +46,7 @@ const About = ({ data }) => {
           hasIcon={true}
           linksOut
         >
-          LinkedIn Resumees
+          LinkedIn Resume
         </Button>
       </Banner>
       <Section>

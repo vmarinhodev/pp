@@ -22,13 +22,13 @@
                 The KidsClub takes children on an interactive game adventure
                 Make shopping fun, playful and educational for young children with the KidsClub.
                 The solution for parent and child to do their shopping in a relaxed manner.
-      image:  "./vitormar.jpg"
-    - heading:  De Company
-      title:    from idea to content
+      image:  "./octocast_hero_1.png"
+    - heading:  Company
+      title:    From idea to content
       content:  |
                 UW-S creates communication solutions that are innovative in development, creative in concept, strong in content and off the beaten track.
-                 help supermarkets distinguish themselves locally through the combined power of digital in-store communication, local knowledge and relevant content.
-      image:  "./vmhobbiel.jpg"
-  title:  Hi there!
-  tagline:  Nice to meet you
+                 The company help supermarkets distinguish themselves locally through the combined power of digital in-store communication, local knowledge and relevant content.
+      image:  "./octocast_hero_1.png"
+  title:  UW-S
+  tagline:  Frontend Developer
 ...

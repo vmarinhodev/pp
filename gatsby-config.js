@@ -65,7 +65,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-yaml`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-styled-components`,
     `babel-plugin-styled-components`,
     `gatsby-plugin-lodash`,

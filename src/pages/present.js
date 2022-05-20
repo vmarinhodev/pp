@@ -15,21 +15,21 @@ import {
   Title,
 } from '@components'
 import linkCss from '@styles/links'
-import { socialLinks } from 'config/vars'
 
-const AboutContainer = styled(Container)`
+const PresentContainer = styled(Container)`
   a {
     ${linkCss}
     line-height: 1;
   }
 `
 
-const AboutGrid = styled(GridFlex)`
+const PresentGrid = styled(GridFlex)`
   padding-bottom: ${props => props.theme.spacing.section.md};
 `
 const AboutImageWrapper = styled.div`
   padding-bottom: ${props => props.theme.spacing.section.md};
 `
+const uwsLink = 'https://www.uw-s.nl'
 
 const Present = ({ data }) => {
   const { present } = data
@@ -37,31 +37,31 @@ const Present = ({ data }) => {
   console.log('hobbies', hobbies)
   return (
     <Layout>
-      <SEO title="About" description={tagline} />
+      <SEO title="Present" description={tagline} />
       <Banner title={title} variant="mono">
         <h4>{tagline}</h4>
         <Button
-          to={socialLinks.linkedin.link}
+          to={uwsLink}
           variant="color"
-          hasIcon={true}
+          hasIcon={false}
           linksOut
         >
-          LinkedIn Resume
+          Company website
         </Button>
       </Banner>
       <Section>
         {intro.map((item, index) => {
           const { heading, title, content } = intro[index]
           return (
-            <AboutContainer key={`intro-${index}`}>
-              <AboutGrid justify="center">
+            <PresentContainer key={`intro-${index}`}>
+              <PresentGrid justify="center">
                 <GridFlexItem md="8">
                   <Title>{heading}</Title>
                      <h3>{title}</h3>
                      <p dangerouslySetInnerHTML={{ __html: paragraphs(content) }} />
                 </GridFlexItem>
-              </AboutGrid>
-            </AboutContainer>
+              </PresentGrid>
+            </PresentContainer>
           )
         })}
       </Section>
@@ -75,15 +75,15 @@ const Present = ({ data }) => {
                 <Img fluid={image.childImageSharp.fluid} />
                 </AboutImageWrapper>
               </Container>
-              <AboutContainer>
-                <AboutGrid justify="center">
+              <PresentContainer>
+                <PresentGrid justify="center">
                   <GridFlexItem md="8">
                     <Title>{heading}</Title>
                      <h3>{title}</h3>
                      <p dangerouslySetInnerHTML={{ __html: paragraphs(content) }} />
                   </GridFlexItem>
-                </AboutGrid>
-              </AboutContainer>
+                </PresentGrid>
+              </PresentContainer>
             </div>
           )
         })}
@@ -92,7 +92,7 @@ const Present = ({ data }) => {
   )
 }
 
-export const aboutQuery = graphql`
+export const presentQuery = graphql`
   query PresentQuery {
     present: presentYaml {
       title

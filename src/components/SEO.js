@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import {HelmetProvider, Helmet }from 'react-helmet-async'
 import { StaticQuery, graphql } from 'gatsby'
 
 function SEO({ pathname, description, lang, meta, keywords, title }) {
@@ -14,6 +14,7 @@ function SEO({ pathname, description, lang, meta, keywords, title }) {
           ? `${title} | ${data.site.siteMetadata.altName}`
           : data.site.siteMetadata.altName
         return (
+          <HelmetProvider>
           <Helmet
             htmlAttributes={{
               lang,
@@ -64,6 +65,7 @@ function SEO({ pathname, description, lang, meta, keywords, title }) {
               )
               .concat(meta)}
           />
+          </HelmetProvider>
         )
       }}
     />

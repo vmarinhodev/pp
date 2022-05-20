@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import {HelmetProvider, Helmet} from 'react-helmet-async'
 import { graphql } from 'gatsby'
 
 import {
@@ -58,9 +58,11 @@ const Projects = ({ data: { project }, pageContext }) => {
           location={path}
           description={introDetails.content}
         />
+        <HelmetProvider>
         <Helmet>
           <body className="vm-project-page" />
         </Helmet>
+        </HelmetProvider>
         <Banner title={title} spacing={150} variant="color">
           <h4>{tagline}</h4>
           {website && (

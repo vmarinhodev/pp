@@ -12,9 +12,9 @@ const SvgIcon = styled.svg`
 const Icon = ({ name, width, height }) => (
   <SvgIcon
     xmlns="http://www.w3.org/2000/svg"
-    ariaHidden="true"
+    aria-hidden="true"
     focusable="false"
-    dataIcon={name}
+    dataicon={name}
     role="img"
     width={width}
     height={height}

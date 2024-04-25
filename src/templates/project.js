@@ -9,7 +9,7 @@ import {
   ProjectHighlight,
   ProjectConclusion,
   ProjectPagination,
-  SEO,
+  SeoDetails,
 } from '@components'
 import Banner from '@components/Banner'
 
@@ -46,15 +46,15 @@ const Projects = ({ data: { project }, pageContext }) => {
   const introDetails = body.ProjectBodyIntro
   const highlightDetails = body.ProjectBodyHighlight
   const conclusionDetails = body.ProjectBodyConclusion
-  
+ 
   return (
     <Layout>
-        <SEO
+        <SeoDetails
           type="Project"
           title={title}
           articleBody={introDetails.content}
           datePublished={completed}
-          featureImage={featureImage.childImageSharp.fluid}
+          featureImage={featureImage.childImageSharp.gatsbyImageData}
           location={path}
           description={introDetails.content}
         />
@@ -66,7 +66,7 @@ const Projects = ({ data: { project }, pageContext }) => {
         <Banner title={title} spacing={150} variant="color">
           <h4>{tagline}</h4>
           {website && (
-            <Button to={website.url} hasIcon={true} linksOut>
+            <Button to={website.url} hasicon={true} linksOut>
             See Website
             </Button>
           )}
@@ -86,8 +86,8 @@ const Projects = ({ data: { project }, pageContext }) => {
 export default Projects
 
 export const projectQuery = graphql`
-  query($path: String!) {
-    project: markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query($pathContext: String!) {
+    project: markdownRemark(frontmatter: { path: { eq: $pathContext } }) {
       html
       frontmatter {
         path
@@ -106,9 +106,10 @@ export const projectQuery = graphql`
         tags
         featureImage {
           childImageSharp {
-            fluid(maxWidth: 1300, quality: 80) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              width: 1300
+              quality: 80
+            )
           }
         }
         body {
@@ -119,9 +120,10 @@ export const projectQuery = graphql`
               content
               image{
                 childImageSharp {
-                  fluid(maxWidth: 1300, quality: 80) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(
+                    width: 1300
+                    quality: 80
+                  )
                 }
               }
             }
@@ -133,9 +135,10 @@ export const projectQuery = graphql`
               content
               image{
                 childImageSharp {
-                  fluid(maxWidth: 1300, quality: 80) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(
+                    width: 1300
+                    quality: 80
+                  )
                 }
               }
             }
@@ -148,9 +151,10 @@ export const projectQuery = graphql`
               content
               image{
                 childImageSharp {
-                  fluid(maxWidth: 1300, quality: 80) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(
+                    width: 1300
+                    quality: 80
+                  )
                 }
               }
             }

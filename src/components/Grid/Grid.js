@@ -17,7 +17,7 @@ Grid.propTypes = {
 Grid.defaultProps = {
   cols: '2',
   items: '2',
-  startsOn: 'sm',
+  startson: 'sm',
   gap: gutter.grid,
 }
 

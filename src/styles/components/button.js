@@ -177,7 +177,7 @@ export const ghostStylesVariants = theme.variants(
 const buttonStyles = css`
   ${defaultStyles}
   ${props => {
-    if (props.hasIcon) {
+    if (props.hasicon) {
       return css`
         ${iconCss}
       `
@@ -200,7 +200,7 @@ const ButtonA = styled.a`
   ${buttonStyles}
 `
 
-const ButtonLink = styled(({ type, variant, hasIcon, ...props}) => (
+const ButtonLink = styled(({ type, variant, hasicon, ...props}) => (
   <Link {...props} />
 ))`
   ${buttonStyles}

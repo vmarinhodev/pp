@@ -1,29 +1,13 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import { Container, ProjectBasic } from '@components'
 
-const ProjectAdditionalCollection = () => (
-  <Container>
-    <StaticQuery 
-      query={`${ProjectsAdditionalQuery}`}
-      render={({
-        basicProjects: { edges },
-      }) => {
-        return (
-          <>
-          {edges.map(({node: details }, index) => (
-            <ProjectBasic key={`project-${index}`} details={details} />
-          ))}
-          </>
-        )
-      }}
-    />
-  </Container>
-)
-
-export const ProjectsAdditionalQuery = graphql`
+const ProjectAdditionalCollection = () => {
+  const query = useStaticQuery(
+    graphql`
       query ProjectsAdditionalQuery {
-        basicProjects: allBasicProjectsYaml(sort: {fields: completed, order: DESC}) {
+        basicProjects: allBasicProjectsYaml(
+          sort: {completed: DESC}) {
           edges {
             node {
               title
@@ -41,6 +25,18 @@ export const ProjectsAdditionalQuery = graphql`
           }
         }
       }
-`
+    `
+  )
 
+  const { edges } = query.basicProjects
+  return (
+    <>
+      <Container>
+        {edges.map(({node: details }, index) => (
+          <ProjectBasic key={`project-${index}`} details={details} />
+        ))}
+      </Container>
+    </>
+  )
+}
 export default ProjectAdditionalCollection

@@ -1,26 +1,29 @@
+import path from 'path'
+import { dirname }from 'path'
+import {fileURLToPath} from 'url';
+import { createFilePath } from "gatsby-source-filesystem"
+import { createRequire } from "module"
 
-const path = require("path")
-const Queries = require("./queries")
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const require = createRequire(import.meta.url)
+const queries = require("./src/queries/mainquery.js")
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
-exports.createPages = async ({ actions: { createPage }, graphql }) => {
+export const createPages = async ({ actions: { createPage }, graphql }) => {
   try {
     const projectsTemplate = path.resolve("./src/templates/project.js")
-
-    const { data, errors } = await graphql(Queries)
-
+    const { data, errors } = await graphql(queries)
     const projects = data.projects.edges
     const length = projects.length
     
     // Create project pages
     projects.forEach(({ node }, index) => {
-
       const prev = index === 0 ? projects[length - 1].node : projects[index - 1].node
       const next = index === length - 1 ? projects[0].node : projects[index + 1].node
       createPage({
-        path: node.frontmatter.path,
+        path: node?.frontmatter?.path,
         component: projectsTemplate,
         context: {
+          pathContext: node.frontmatter.path,
           slug: node.fields.slug,
           prev,
           next,
@@ -36,7 +39,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   }
 }
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+export function onCreateWebpackConfig({ actions }) {
   actions.setWebpackConfig({
     resolve: {
       modules: [path.resolve(__dirname, 'src'), 'node_modules'],
@@ -44,7 +47,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   })
 }
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
+export function onCreateNode({ node, getNode, actions }) {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {

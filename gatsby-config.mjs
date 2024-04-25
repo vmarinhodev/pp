@@ -1,14 +1,18 @@
-const path = require('path')
-const urljoin = require("url-join")
-const siteConfig = require("./config/site")
+import path from 'path'
+import urlJoin from 'url-join'
+import { dirname } from "path"
+import { fileURLToPath } from "url"
+import siteConfig from "./config/site.js"
 
-module.exports = {
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const config = {
   siteMetadata: {
     title: siteConfig.shortname,
     altName: siteConfig.altName,
     author: siteConfig.author,
     description: siteConfig.defaultDescription,
-    siteUrl: urljoin(siteConfig.url, siteConfig.prefix),
+    siteUrl: urlJoin(siteConfig.url, siteConfig.prefix),
   },
   
   plugins: [
@@ -26,6 +30,7 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -92,3 +97,5 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 }
+
+export default config;

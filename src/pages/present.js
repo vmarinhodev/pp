@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import paragraphs from 'lines-to-paragraphs'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
   Banner,
   Button,
@@ -11,7 +11,7 @@ import {
   GridFlex,
   GridFlexItem,
   Section,
-  SEO,
+  SeoDetails,
   Title,
 } from '@components'
 import linkCss from '@styles/links'
@@ -34,16 +34,15 @@ const uwsLink = 'https://www.uw-s.nl'
 const Present = ({ data }) => {
   const { present } = data
   const { title, tagline, intro, hobbies } = present
-  console.log('hobbies', hobbies)
   return (
     <Layout>
-      <SEO title="Present" description={tagline} />
+      <SeoDetails title="Present" description={tagline} />
       <Banner title={title} variant="mono">
         <h4>{tagline}</h4>
         <Button
           to={uwsLink}
           variant="color"
-          hasIcon={false}
+          hasicon={false}
           linksOut
         >
           Company website
@@ -67,12 +66,13 @@ const Present = ({ data }) => {
       </Section>
       <Section variant="inverse">
         {hobbies.map((hobby, index) => {
-          const { heading, title, content, image } = hobby
+          const { heading, title, content } = hobby
+          const image = getImage(hobby.image)
           return (
             <div key={`hobby-${index}`}>
               <Container>
                 <AboutImageWrapper>
-                <Img fluid={image.childImageSharp.fluid} />
+                <GatsbyImage image={image} alt={"alt text"} />
                 </AboutImageWrapper>
               </Container>
               <PresentContainer>
@@ -108,9 +108,10 @@ export const presentQuery = graphql`
         content
         image {
           childImageSharp {
-            fluid(maxWidth: 1120, quality: 90) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              width: 1120
+              quality: 80
+            )
           }
         }
       }

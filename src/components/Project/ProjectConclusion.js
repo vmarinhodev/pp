@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import paragraphs from 'lines-to-paragraphs'
 
 import {
@@ -43,13 +43,15 @@ const ProjectConclusion = ({ details, variant, meta}) => {
   const { primary } = details
   const { title, subtitle, content, image } = primary
   const { website, source } = meta
+  const img = getImage(image)
 
   return (
     <>
       <Section variant={variant}>
         <ImageContainer size="large">
           <ImageWrapper>
-            <Img fluid={image.childImageSharp.fluid} />
+            {/* <Img fluid={image.childImageSharp.fluid} /> */}
+            <GatsbyImage image={img} alt={"alt text"} />
           </ImageWrapper>
         </ImageContainer>
         <Container>
@@ -61,7 +63,7 @@ const ProjectConclusion = ({ details, variant, meta}) => {
             </GridFlexItem>
             <EndLinks>
             {website && (
-              <Button to={website.url} hasIcon={true} variant="color" linksOut>
+              <Button to={website.url} hasicon={true} variant="color" linksOut>
                 View Website
               </Button>
             )}

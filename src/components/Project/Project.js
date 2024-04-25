@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Button } from '@components'
+import { getSrc } from "gatsby-plugin-image"
 import {
   ProjectCard,
   ProjectCardImage,
@@ -20,10 +21,11 @@ import {
 } from './ProjectWide'
 
 
-const Project = ({ details, index, type, excerpt }) => {
+const Project = ({ details, index, type, excerpt, }) => {
   
   const { title, path, website, featureImage} = details
-  const { src } = featureImage.childImageSharp.fluid
+  const src = getSrc(featureImage?.childImageSharp?.gatsbyImageData)
+  
   const isEven = index % 2 === 0
 
   if (type === 'card') {
@@ -51,11 +53,11 @@ const Project = ({ details, index, type, excerpt }) => {
   } else {
     const isOdd = isEven ? '' : 'is-odd'
     return (
-      <ProjectWide startsOn="md" align="center" cols="12">
+      <ProjectWide startson="md" align="center" cols="12">
         <ProjectWideImageWrapper
           md={{ start: 5, end: -1 }}
           className={isOdd}
-          isOdd={!isEven}
+          isodd="true"
         >
           <Link to={`${path}`} aria-label={`${title} Project Page`}>
             <ProjectWideImage md={{ start: 1, end: -1 }} src={src} />

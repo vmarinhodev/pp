@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import paragraphs from 'lines-to-paragraphs'
 
 import { Container, GridFlex, GridFlexItem, Title } from '@components'
@@ -66,12 +66,14 @@ const renderTools = ( tools, index ) => <Skill key={index}>{tools}</Skill>
 const ProjectHighlight = ({ details, variant }) => {
   const { primary, tools } = details
   const { title, subtitle, content, image } = primary
+  const img = getImage(image)
 
   return (
     <HighlightSection variant="mono">
       <ImageContainer size="large">
         <ImageWrapper>
-          <Img fluid={image.childImageSharp.fluid} />
+          {/* <Img fluid={image.childImageSharp.fluid} /> */}
+          <GatsbyImage image={img} alt={"alt text"} />
         </ImageWrapper>
       </ImageContainer>
       <SkillContainer>

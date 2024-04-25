@@ -32,7 +32,7 @@ const Index = ({ data: { projectos }}) => {
           Frontend oriented fullstack web developer.
           Always in pursuit for efficiency through simplicity.
         </h4>
-        <Button variant="color" to="/projects" hasIcon={true}>
+        <Button variant="color" to="/projects" hasicon={true}>
           See Work
         </Button>
       </Banner>
@@ -63,7 +63,7 @@ const Index = ({ data: { projectos }}) => {
             )
           })}
           <div style={{ textAlign: 'center' }}>
-            <Button to="/projects" type="ghost" hasIcon={true}>
+            <Button to="/projects" type="ghost" hasicon={true}>
               All Projects
             </Button>
           </div>
@@ -75,7 +75,10 @@ const Index = ({ data: { projectos }}) => {
 
 export const projectQuery = graphql`
   query IndexQuery {
-    projectos: allMarkdownRemark(limit: 3, sort: { order: DESC, fields: [frontmatter___completed] }) {
+    projectos: allMarkdownRemark(
+      limit: 3,
+      sort: { frontmatter: { completed: DESC }}
+    ) {
       edges {
         node {
           frontmatter {
@@ -91,9 +94,10 @@ export const projectQuery = graphql`
             tags
             featureImage {
               childImageSharp {
-                fluid(maxWidth: 1260) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 1120
+                  quality: 80
+                )
               }
             }
           }

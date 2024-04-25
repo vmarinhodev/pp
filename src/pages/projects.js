@@ -1,17 +1,17 @@
 import React from 'react'
-import { Button, Banner, Layout, ProjectPageContent, SEO } from '@components'
+import { Button, Banner, Layout, ProjectPageContent, SeoDetails } from '@components'
 
 const projectsTagline = 
   'Every project serves as a learning experience.'
 
   const Projects = () => (
     <Layout>
-      <SEO title="Projects"  />
+      <SeoDetails title="Projects"  />
       <Banner title="My web contribution" variant="mono">
         <h4>{projectsTagline}</h4>
         <Button
           to="mailto:vitor@vmarinho.dev?subject=Let's get working."
-          hasIcon={true}
+          hasicon={true}
           variant="color"
           isEmail
         >

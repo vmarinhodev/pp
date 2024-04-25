@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import paragraphs from 'lines-to-paragraphs'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 import {
   Banner,
   Button,
@@ -11,7 +12,7 @@ import {
   GridFlex,
   GridFlexItem,
   Section,
-  SEO,
+  SeoDetails,
   Title,
 } from '@components'
 import linkCss from '@styles/links'
@@ -34,16 +35,16 @@ const AboutImageWrapper = styled.div`
 const About = ({ data }) => {
   const { about } = data
   const { title, tagline, intro, hobbies } = about
-  console.log('hobbies', hobbies)
+
   return (
     <Layout>
-      <SEO title="About" description={tagline} />
+      <SeoDetails title="About" description={tagline} />
       <Banner title={title} variant="mono">
         <h4>{tagline}</h4>
         <Button
           to={socialLinks.linkedin.link}
           variant="color"
-          hasIcon={true}
+          hasicon={true}
           linksOut
         >
           LinkedIn Resume
@@ -67,12 +68,14 @@ const About = ({ data }) => {
       </Section>
       <Section variant="inverse">
         {hobbies.map((hobby, index) => {
-          const { heading, title, content, image } = hobby
+          const image = getImage(hobby.image)
+          const { heading, title, content } = hobby
           return (
             <div key={`hobby-${index}`}>
               <Container>
                 <AboutImageWrapper>
-                <Img fluid={image.childImageSharp.fluid} />
+                {/* <Img fluid={image.childImageSharp} /> */}
+                <GatsbyImage image={image} alt={"alt text"} />
                 </AboutImageWrapper>
               </Container>
               <AboutContainer>
@@ -108,9 +111,10 @@ export const aboutQuery = graphql`
         content
         image {
           childImageSharp {
-            fluid(maxWidth: 1120, quality: 90) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              width: 1300
+              quality: 80
+            )
           }
         }
       }

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { SEO, Footer } from '@components'
+import { SeoDetails, Footer } from '@components'
 
 const Layout = ({ children, hasFooter }) => {
   return (
     <>
-      <SEO />
+      <SeoDetails />
       {children}
       {hasFooter && <Footer />}
     </>

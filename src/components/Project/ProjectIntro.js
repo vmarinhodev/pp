@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { withPrefix } from 'gatsby'
 import { format } from 'date-fns'
 import paragraphs from 'lines-to-paragraphs'
@@ -96,12 +96,14 @@ const ProjectIntro = ({ details, meta, variant }) => {
   const { completed, client, personalproject, role } = meta
   const { primary } = details
   const { title, subtitle, content, image } = primary
-
+  const img = getImage(image)
+  
   return (
     <ProjectIntroSection>
       <Container size="large">
         <ProjectIntroHighlightImage>
-          <Img fluid={image.childImageSharp.fluid} />
+          {/* <Img fluid={image.childImageSharp.fluid} /> */}
+          <GatsbyImage image={img} alt={"alt text"} />
         </ProjectIntroHighlightImage>
       </Container>
       <Container>

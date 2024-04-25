@@ -4,8 +4,8 @@ import Icon from '@components/Icon'
 
 import { ButtonA, ButtonLink } from '@styles/components/button'
 
-const renderIcon = (hasIcon, icon ) => {
-  if (hasIcon) {
+const renderIcon = (hasicon, icon ) => {
+  if (hasicon) {
     return <Icon name={icon} />
   }
 }
@@ -16,7 +16,7 @@ const Button = ({
   variant,
   type,
   icon,
-  hasIcon,
+  hasicon,
   linksOut,
   isEmail,
 }) => {
@@ -28,10 +28,10 @@ const Button = ({
         type={type}
         variant={variant}
         target={linksOut ? '_blank' : ''}
-        hasIcon={hasIcon}
+        hasicon={hasicon}
       >
         {children}
-        {renderIcon(hasIcon, icon)}
+        {renderIcon(hasicon, icon)}
       </ButtonA>
     )
   } else {
@@ -40,10 +40,10 @@ const Button = ({
         to={to}
         variant={variant}
         type={type}
-        hasIcon={hasIcon}
+        hasicon={hasicon}
       >
         {children}
-        {renderIcon(hasIcon, icon)}
+        {renderIcon(hasicon, icon)}
       </ButtonLink>
     )
   }
@@ -52,7 +52,7 @@ const Button = ({
 Button.propTypes = {
   variant: PropTypes.oneOf(['default', 'inverse', 'color', 'colorInverse']),
   type: PropTypes.oneOf(['solid', 'ghost']),
-  hasIcon: PropTypes.bool,
+  hasicon: PropTypes.bool,
   icon: PropTypes.string,
   linksOut: PropTypes.bool,
   isEmail: PropTypes.bool,
@@ -61,7 +61,7 @@ Button.propTypes = {
 Button.defaultProps = {
   variant: 'default',
   type: 'solid',
-  hasIcon: false,
+  hasicon: false,
   icon: 'arrow-right',
   linksOut: false,
   isEmail: false,

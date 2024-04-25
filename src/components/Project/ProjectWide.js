@@ -75,7 +75,7 @@ const ProjectWideImageWrapper = styled(GridItem)`
     position: absolute;
     top: -${props => props.theme.gutter.container};
     ${props =>
-      props.isOdd ? `left: -${remCalc(15)}` : `right: -${remCalc(15)}`};
+      props.isodd ? `left: -${remCalc(15)}` : `right: -${remCalc(15)}`};
     background-repeat: repeat;
     background-size: 10px;
     background-position: top left;
@@ -88,7 +88,7 @@ const ProjectWideImageWrapper = styled(GridItem)`
       width: ${remCalc(580)};
       height: ${remCalc(360)};
       ${props =>
-        props.isOdd
+        props.isodd
           ? `left: -${props.theme.gutter.container}`
           : `right: -${props.theme.gutter.container}`};
     `}

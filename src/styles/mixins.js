@@ -19,12 +19,12 @@ const makeFlexBox = ({ direction, wrap, justify, align }) => {
 }
 
 const makeGrid = (props, isFlex = false) => {
-  const { startsOn } = props
+  const { startson } = props
 
   if (isFlex) {
-    return minMedia[startsOn]`${makeFlexBox(props)}`
+    return minMedia[startson]`${makeFlexBox(props)}`
   }
-  return minMedia[startsOn]`${makeCssGrid(props)}`
+  return minMedia[startson]`${makeCssGrid(props)}`
 }
 
 const getPercentage = (numerator, denominator = 12) => {

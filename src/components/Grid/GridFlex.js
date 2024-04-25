@@ -13,7 +13,7 @@ GridFlex.propTypes = {
   align: PropTypes.string,
   direction: PropTypes.string,
   justify: PropTypes.string,
-  startsOn: PropTypes.string,
+  startson: PropTypes.string,
   wrap: PropTypes.string,
 }
 
@@ -21,7 +21,7 @@ GridFlex.defaultProps = {
   align: 'flex-start',
   direction: 'row',
   justify: 'flex-start',
-  startsOn: 'sm',
+  startson: 'sm',
   wrap: 'wrap',
 }
 

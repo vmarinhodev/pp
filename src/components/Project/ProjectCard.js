@@ -13,6 +13,7 @@ const ProjectCard = styled(GridItem)`
 const ProjectCardImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
+  
   a {
     display: block;
   }

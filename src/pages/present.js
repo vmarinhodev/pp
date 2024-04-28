@@ -42,10 +42,10 @@ const Present = ({ data }) => {
         <Button
           to={uwsLink}
           variant="color"
-          hasicon={false}
+          hasicon
           linksOut
         >
-          Company website is new
+          Company website
         </Button>
       </Banner>
       <Section>

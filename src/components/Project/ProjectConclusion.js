@@ -44,13 +44,13 @@ const ProjectConclusion = ({ details, variant, meta}) => {
   const { title, subtitle, content, image } = primary
   const { website, source } = meta
   const img = getImage(image)
+  console.log('img', img)
 
   return (
     <>
       <Section variant={variant}>
         <ImageContainer size="large">
           <ImageWrapper>
-            {/* <Img fluid={image.childImageSharp.fluid} /> */}
             <GatsbyImage image={img} alt={"alt text"} />
           </ImageWrapper>
         </ImageContainer>

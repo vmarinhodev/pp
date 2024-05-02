@@ -39,7 +39,11 @@ const EndLinks = styled.div`
   padding-right: ${props => props.theme.gutter.grid};
 `
 
-const ProjectConclusion = ({ details, variant, meta}) => {
+const ProjectConclusion = ({
+  details,
+  variant = 'default',
+  meta
+}) => {
   const { primary } = details
   const { title, subtitle, content, image } = primary
   const { website, source } = meta
@@ -77,10 +81,6 @@ const ProjectConclusion = ({ details, variant, meta}) => {
       </Section>
     </>
   )
-}
-
-ProjectConclusion.defaultProps = {
-  variant: 'default'
 }
 
 ProjectConclusion.propTypes = {

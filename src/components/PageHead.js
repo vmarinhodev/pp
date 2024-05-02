@@ -2,7 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const PageHead = ({ description, lang, meta, keywords, title }) => {
+const PageHead = ({ 
+  description,
+  lang = `en`,
+  meta = [],
+  keywords = [],
+  title 
+}) => {
   const query = useStaticQuery(
     graphql`
       query DefaultSEOQuery {
@@ -41,12 +47,6 @@ const pageTitle = title
 }
 
 export default PageHead
-
-PageHead.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: [],
-}
 
 PageHead.propTypes = {
   description: PropTypes.string,

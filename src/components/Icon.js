@@ -9,7 +9,11 @@ const SvgIcon = styled.svg`
   height: ${props => props.height};
 `
 
-const Icon = ({ name, width, height }) => (
+const Icon = ({
+  name,
+  width = '16px',
+  height = '16px',
+}) => (
   <SvgIcon
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
@@ -28,11 +32,6 @@ Icon.propTypes = {
   name: PropTypes.string.isRequired,
   width: PropTypes.string,
   height: PropTypes.string,
-}
-
-Icon.defaultProps = {
-  width: '16px',
-  height: '16px',
 }
 
 export default Icon

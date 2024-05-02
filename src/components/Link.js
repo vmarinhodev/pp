@@ -12,7 +12,12 @@ const CustomLink = styled.a`
   ${linkCss}
 `
 
-export const ALink = ({ internal, href, children, linksOut }) => {
+export const ALink = ({
+  internal = true,
+  href,
+  children,
+  linksOut = false
+}) => {
   if (internal) {
     return <StyledLink to={href}>{children}</StyledLink>
   } else {
@@ -32,11 +37,6 @@ ALink.propTypes = {
   href: PropTypes.string.isRequired,
   internal: PropTypes.bool,
   linksOut: PropTypes.bool,
-}
-
-ALink.defaultProps = {
-  internal: true,
-  linksOut: false,
 }
 
 export default ALink

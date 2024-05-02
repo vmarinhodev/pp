@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-
 import { Container, Title } from '@components'
-
 import {
   BannerWrapper,
   BannerHeading,
@@ -15,7 +13,14 @@ const renderSubTitle = subTitle => {
   }
 }
 
-const Banner = ({ title, subTitle, children, size, variant, spacing }) => {
+const Banner = ({
+  title,
+  subTitle,
+  children,
+  size = 'auto',
+  variant = 'default',
+  spacing = 180,
+}) => {
   return (
     <BannerWrapper
       size={size}
@@ -36,12 +41,6 @@ Banner.propTypes = {
   size: PropTypes.string,
   spacing: PropTypes.number,
   variant: PropTypes.oneOf(['default', 'inverse', 'color', 'mono']),
-}
-
-Banner.defaultProps = {
-  size: 'auto',
-  spacing: 180,
-  variant: 'default',
 }
 
 export default Banner

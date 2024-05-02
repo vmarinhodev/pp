@@ -35,7 +35,7 @@ const renderLabels = item => {
   )
 }
 
-const Social = ({ icons }) => {
+const Social = ({ icons = true }) => {
   const social = Object.keys(socialLinks)
 
   if (!icons) {
@@ -47,10 +47,6 @@ const Social = ({ icons }) => {
 
 Social.propTypes = {
   icons: PropTypes.bool,
-}
-
-Social.defaultProps = {
-  icons: true,
 }
 
 export default Social

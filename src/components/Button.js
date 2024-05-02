@@ -13,12 +13,12 @@ const renderIcon = (hasicon, icon ) => {
 const Button = ({
   to,
   children,
-  variant,
-  type,
-  icon,
-  hasicon,
-  linksOut,
-  isEmail,
+  variant = 'default',
+  type = 'solid',
+  icon = 'arrow-right',
+  hasicon = 'false',
+  linksOut = false,
+  isEmail = false,
 }) => {
   if ( linksOut || isEmail) {
     return (
@@ -28,7 +28,7 @@ const Button = ({
         type={type}
         variant={variant}
         target={linksOut ? '_blank' : ''}
-        hasicon={hasicon}
+        hasicon={hasicon.toString()}
       >
         {children}
         {renderIcon(hasicon, icon)}
@@ -40,7 +40,7 @@ const Button = ({
         to={to}
         variant={variant}
         type={type}
-        hasicon={hasicon}
+        hasicon={hasicon.toString()}
       >
         {children}
         {renderIcon(hasicon, icon)}
@@ -56,15 +56,6 @@ Button.propTypes = {
   icon: PropTypes.string,
   linksOut: PropTypes.bool,
   isEmail: PropTypes.bool,
-}
-
-Button.defaultProps = {
-  variant: 'default',
-  type: 'solid',
-  hasicon: false,
-  icon: 'arrow-right',
-  linksOut: false,
-  isEmail: false,
 }
 
 export default Button

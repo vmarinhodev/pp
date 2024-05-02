@@ -1,5 +1,4 @@
 import React from 'react'
-import {HelmetProvider, Helmet} from 'react-helmet-async'
 import { graphql } from 'gatsby'
 
 import {
@@ -9,14 +8,31 @@ import {
   ProjectHighlight,
   ProjectConclusion,
   ProjectPagination,
-  SeoDetails,
 } from '@components'
 import Banner from '@components/Banner'
+import PageHead from '../components/PageHead'
+
+export const Head = ({data: { project }}) => {
+  const {
+    title,
+    body,
+    path,
+  } = project.frontmatter
+
+  const introDetails = body.ProjectBodyIntro;
+
+  return (
+    <PageHead
+        title= {title}
+        description= {introDetails.content}
+        location= {path}
+    />
+  )
+}
 
 const Projects = ({ data: { project }, pageContext }) => {
 
   const {
-    path,
     title,
     tagline,
     completed,
@@ -25,7 +41,6 @@ const Projects = ({ data: { project }, pageContext }) => {
     role,
     website,
     source,
-    featureImage,
     body,
   } = project.frontmatter
 
@@ -49,20 +64,7 @@ const Projects = ({ data: { project }, pageContext }) => {
  
   return (
     <Layout>
-        <SeoDetails
-          type="Project"
-          title={title}
-          articleBody={introDetails.content}
-          datePublished={completed}
-          featureImage={featureImage.childImageSharp.gatsbyImageData}
-          location={path}
-          description={introDetails.content}
-        />
-        <HelmetProvider>
-        <Helmet>
           <body className="vm-project-page" />
-        </Helmet>
-        </HelmetProvider>
         <Banner title={title} spacing={150} variant="color">
           <h4>{tagline}</h4>
           {website && (

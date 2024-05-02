@@ -11,10 +11,20 @@ import {
   GridFlex,
   GridFlexItem,
   Section,
-  SeoDetails,
+  PageHead,
   Title,
 } from '@components'
 import linkCss from '@styles/links'
+
+export const Head = ({data: {present}}) => {
+  const {tagline} = present
+  return (
+    <PageHead 
+      title="Present"
+      description={tagline}
+    />
+  )
+}
 
 const PresentContainer = styled(Container)`
   a {
@@ -36,7 +46,6 @@ const Present = ({ data }) => {
   const { title, tagline, intro, hobbies } = present
   return (
     <Layout>
-      <SeoDetails title="Present" description={tagline} />
       <Banner title={title} variant="mono">
         <h4>{tagline}</h4>
         <Button

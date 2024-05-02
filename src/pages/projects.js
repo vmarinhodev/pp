@@ -1,12 +1,18 @@
 import React from 'react'
-import { Button, Banner, Layout, ProjectPageContent, SeoDetails } from '@components'
+import { Button, Banner, Layout, ProjectPageContent, PageHead } from '@components'
 
 const projectsTagline = 
   'Every project serves as a learning experience.'
 
+  export const Head = () => {
+    return (
+      <PageHead title="Projects"  />
+    )
+  }
+
   const Projects = () => (
     <Layout>
-      <SeoDetails title="Projects"  />
+      {/* <PageHead title="Projects"  /> */}
       <Banner title="My web contribution" variant="mono">
         <h4>{projectsTagline}</h4>
         <Button

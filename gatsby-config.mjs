@@ -70,7 +70,6 @@ const config = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-yaml`,
-    `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-styled-components`,
     `babel-plugin-styled-components`,
     `gatsby-plugin-lodash`,

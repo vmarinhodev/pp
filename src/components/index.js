@@ -18,7 +18,7 @@ import {
   ProjectPagination,
 } from './Project'
 import Section from './Section'
-import SeoDetails from './SeoDetails'
+import PageHead from './PageHead'
 import Social from './Social'
 import ThemeContext from './ThemeContext'
 import Title from './Title'
@@ -47,7 +47,7 @@ export {
   ProjectPageContent,
   ProjectPagination,
   Section,
-  SeoDetails,
+  PageHead,
   Social,
   ThemeContext,
   Title,

@@ -44,7 +44,6 @@ const ProjectConclusion = ({ details, variant, meta}) => {
   const { title, subtitle, content, image } = primary
   const { website, source } = meta
   const img = getImage(image)
-  console.log('img', img)
 
   return (
     <>

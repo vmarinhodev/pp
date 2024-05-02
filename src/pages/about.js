@@ -12,11 +12,20 @@ import {
   GridFlex,
   GridFlexItem,
   Section,
-  SeoDetails,
+  PageHead,
   Title,
 } from '@components'
 import linkCss from '@styles/links'
 import { socialLinks } from 'config/vars'
+
+export const Head = (data) => {
+  return (
+    <PageHead 
+      title="About"
+      description={data.tagline}
+    />
+  )
+}
 
 const AboutContainer = styled(Container)`
   a {
@@ -38,7 +47,6 @@ const About = ({ data }) => {
 
   return (
     <Layout>
-      <SeoDetails title="About" description={tagline} />
       <Banner title={title} variant="mono">
         <h4>{tagline}</h4>
         <Button

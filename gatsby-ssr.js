@@ -6,6 +6,7 @@ export const wrapPageElement = ({ element, props }) => {
   return (
     <Location>
       {({ location }) => <Wrapper {...props}>{element}</Wrapper>}
+      
     </Location>
   )
 }

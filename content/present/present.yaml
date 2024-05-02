@@ -4,10 +4,28 @@
       title:  What I am Doing at the moment
       content:  |
               At the present moment I am a Front End Developer for UW-S, turning ideas into practical software.
-              I've been part of the UW-s team for the last two years, creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
+              I've been part of the UW-s team since 2020, creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
               
-              After graduating from SAE Institute, London (Middlesex University) in 2015 with a B.A. Hons in Web Development, I started working at AmeTrade where I've been working as a Full-Stack (LAMP Stack) developer for over 4 years.
-              During my time there, I have worked with different languages, technologies and platforms.
+              As a React frontend developer, I create and maintain the user interface of web applications using React.
+              My role involves transforming design mockups and wireframes into functional, efficient, and visually appealing components.
+              I work closely with designers to ensure the user interface aligns with the intended user experience and design specifications.
+              
+              I leverage React’s component-based architecture to build reusable, modular components that manage their own state and handle interactions.
+              Efficient state management is key, so I use libraries like Redux or React's Context API to handle complex application states and ensure smooth data flow throughout the application.
+              
+              A significant part of my job is integrating APIs and working with backend developers to maintain seamless communication between the front and back ends.
+              This involves fetching, updating, and manipulating data as needed.
+              
+              I also focus on performance optimization by continuously monitoring and improving the application.
+              Techniques like lazy loading, code splitting, and memoization help keep the app fast and efficient.
+              
+              Testing and debugging are essential for delivering stable, reliable applications, so I write unit and functional tests using libraries like Jest and React Testing Library.
+              Collaboration is important in my role, so I work closely with backend developers, designers, product managers, and other stakeholders to create cohesive and efficient web applications.
+              
+              Continuous learning is a part of my work, as I stay up to date with the latest libraries, tools, and best practices to deliver top-quality results.
+              I manage and track changes using version control systems like Git and may also be involved in deploying front-end applications using CI/CD pipelines.
+              
+              Overall, my role as a React frontend developer is to create high-quality, performant, and user-friendly web applications that meet the needs of users and stakeholders alike.
     - heading:  OctoCast
       title:  Narrowcasting Software
       content:  |

@@ -10,7 +10,7 @@ const Grid = styled.div`
 Grid.propTypes = {
   cols: PropTypes.string,
   items: PropTypes.string,
-  startOn: PropTypes.string,
+  startson: PropTypes.string,
   gap: PropTypes.string,
 }
 

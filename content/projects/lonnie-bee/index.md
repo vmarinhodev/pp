@@ -6,8 +6,6 @@ completed: "2016"
 personalproject: false
 client: Lonneke de Bruin
 role: Web Developer/ UI/UX Designer
-website:
-  url: 'http://www.lonniebee.com'
 featureImage: 'desk_lon_I.jpg'
 tags:
   - html

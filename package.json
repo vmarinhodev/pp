@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Vitor Marinho <vitor@vmarinho.dev>",
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.2.2",
     "babel-plugin-styled-components": "^2.1.4",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.1.7",

@@ -21,7 +21,12 @@ import {
 } from './ProjectWide'
 
 
-const Project = ({ details, index, type, excerpt, }) => {
+const Project = ({
+  details,
+  index,
+  type = "wide",
+  excerpt
+}) => {
   
   const { title, path, website, featureImage} = details
   const src = getSrc(featureImage?.childImageSharp?.gatsbyImageData)
@@ -78,10 +83,6 @@ const Project = ({ details, index, type, excerpt, }) => {
 
 Project.propTypes = {
   type: PropTypes.oneOf(['wide', 'card']),
-}
-
-Project.defaultProps = {
-  type: 'wide',
 }
 
 export default Project

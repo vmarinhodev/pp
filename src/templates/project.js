@@ -96,6 +96,7 @@ export const projectQuery = graphql`
         title
         tagline
         completed(formatString: "YYYY")
+        order
         client
         role
         personalproject

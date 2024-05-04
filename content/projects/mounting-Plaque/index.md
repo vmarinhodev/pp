@@ -3,6 +3,7 @@ path: '/mounting-plaque'
 title: Mounting Plaque
 tagline: animals and woods
 completed: "2015"
+order: "5"
 personalproject: false
 client: Mounting Plaque
 role: Web Developer / UI/ UX Designer

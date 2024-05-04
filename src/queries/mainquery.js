@@ -1,7 +1,7 @@
 module.exports = `
   {
     projects: allMarkdownRemark(
-      sort: {frontmatter: {completed: DESC}},
+      sort: {frontmatter: {order: DESC}},
       limit: 1000
     ) {
       edges {
@@ -15,6 +15,7 @@ module.exports = `
             title
             tagline
             completed(formatString: "YYYY")
+            order
             client
             role
             website {

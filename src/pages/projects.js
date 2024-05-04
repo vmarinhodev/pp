@@ -12,7 +12,6 @@ const projectsTagline =
 
   const Projects = () => (
     <Layout>
-      {/* <PageHead title="Projects"  /> */}
       <Banner title="My web contribution" variant="mono">
         <h4>{projectsTagline}</h4>
         <Button

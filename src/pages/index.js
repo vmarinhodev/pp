@@ -77,7 +77,7 @@ export const projectQuery = graphql`
   query IndexQuery {
     projectos: allMarkdownRemark(
       limit: 3,
-      sort: { frontmatter: { completed: DESC }}
+      sort: { frontmatter: { order: DESC }}
     ) {
       edges {
         node {
@@ -86,6 +86,7 @@ export const projectQuery = graphql`
             title
             tagline
             completed(formatString: "YYYY")
+            order
             client
             role
             website {

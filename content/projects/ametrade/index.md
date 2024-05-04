@@ -3,6 +3,7 @@ path: '/ametrade'
 title: Ametrade
 tagline: Leading Conference & Exhibition Organisers
 completed: "2019"
+order: "6"
 personalproject: false
 client: AmeTrade
 role: Web Developer, UI/UX Designer

@@ -3,12 +3,13 @@ path: '/mrsoficina'
 title: MRS Oficina
 tagline: Customizing Motorcycles
 completed: "2019"
+order: "4"
 personalproject: false
 client: MRS Oficina
 role: Web Developer / UI/ UX Designer
 website:
   url: 'http://mrsoficina.com'
-featureImage: 'mrshomage.jpg'
+featureImage: 'MRSOficinaDesk.png'
 tags:
   - html
   - css

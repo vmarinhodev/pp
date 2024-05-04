@@ -3,6 +3,7 @@ path: '/uw-s'
 title: UW-S
 tagline: Digitale winkelcommunicatie
 completed: "2023"
+order: "7"
 personalproject: false
 client: 'UW-S'
 role: Frontend Developer

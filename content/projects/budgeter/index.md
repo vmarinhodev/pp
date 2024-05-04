@@ -3,6 +3,7 @@ path: '/budgeter'
 title: Budgeter
 tagline: A monthly Budget Calculator
 completed: "2020"
+order: "3"
 personalproject: true
 client: ''
 role: Web Developer / UI/ UX Designer

@@ -3,6 +3,7 @@ path: '/mixins'
 title: Mixins
 tagline: Online Cocktail Recipe
 completed: "2020"
+order: "2"
 personalproject: true
 client: ""
 role: Web Developer

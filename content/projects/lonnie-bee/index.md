@@ -3,6 +3,7 @@ path: '/lonnie-bee'
 title: LonnieBee
 tagline: graphic design
 completed: "2016"
+order: "1"
 personalproject: false
 client: Lonneke de Bruin
 role: Web Developer/ UI/UX Designer

@@ -8,7 +8,7 @@ const ProjectCollection = () => {
     graphql`
       query ProjectsQuery {
         allMarkdownRemark(
-          sort: { frontmatter: {completed: DESC } }
+          sort: { frontmatter: {order: DESC } }
         ) {
           edges {
             node {
@@ -17,6 +17,7 @@ const ProjectCollection = () => {
                 title
                 tagline
                 completed(formatString: "YYYY")
+                order
                 client
                 role
                 website {

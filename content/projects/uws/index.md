@@ -32,14 +32,14 @@ body:
       subtitle: Dynamische narrowcasting software
       content: |
               UW-S creëren communicatieoplossingen die innovatief zijn in ontwikkeling, creatief in concept, sterk in content en buiten de gebaande paden.
-      image: 'breaduwsSign.png'
+      image: 'uws_1.png'
   ProjectBodyHighlight:
     primary:
-      title: Software hoeft niet ingewikkeld te zijn
-      subtitle: OctoCast combineert flexibiliteit en gebruiksgemak bij content targeting en creatie
+      title: Wat is Digital Signage?
+      subtitle: Met narrowcasting benadruk je de eigenheid van jouw winkel
       content: |
-              A simple app to manage monthly budget. User can insert income and outgoing values and the app will calculate the budget left for the month. It also calculates the percentage that each expense takes on the inicial budget value.
-      image: 'octocast_hero_2.png'
+              Digital signage, of ook wel narrowcasting genoemd, is een bijzondere, digitale vorm van communicatie om via beeldschermen informatie over te dragen aan een bepaalde doelgroep.
+      image: 'uwsmock_i.png'
     tools:
       - React
       - TypeScript
@@ -47,11 +47,10 @@ body:
       - Yup
   ProjectBodyConclusion:
     primary:
-      title: Add Session persistance
-      subtitle: Full on Paypal
+      title: Software hoeft niet ingewikkeld te zijn
+      subtitle: OctoCast combineert flexibiliteit en gebruiksgemak bij content targeting en creatie
       content:  |
-              A MVC js graphql project create with an external database and build with modern javascript using es6 npm babel and webpack. Web design that not only looks good, but works just as well.
+              Octocast narrowcasting software is 'in eigen huis' ontwikkeld zodat de teamontwikkelaars deze continu kunnen aanpassen aan wat de markt vraagt.Dit maakt Octocast ontzettend flexibel omdat het niet afhankelijk is van derde partijen.
       image: 'octocast_hero_2.png'
 ---
 
-## A ES6 budget app calculator

@@ -26,14 +26,16 @@ body:
       title: Image Gallery and Editor 
       subtitle: A scalable and maintainable frontend application
       content: |
-               A web-based image gallery and editor application built using a modern tech stack, showcasing a user-friendly interface for uploading, displaying, and editing images. The application utilizes a grid-based layout to showcase images, with features such as image editing and updating using a file uploader form.
+              The Image Gallery and Editor is a state-of-the-art web application designed to provide users with a seamless platform for uploading, displaying, and editing images. The app features a responsive grid-based layout, ensuring an optimal viewing experience on devices of all sizes. With an intuitive file uploader form, users can easily update or edit images. Built with scalability and maintainability in mind, the application incorporates advanced authentication, secure storage, and real-time updates to deliver a modern, user-centric solution. Continuous integration and deployment (CI/CD) pipelines, powered by GitHub and Vercel, ensure a streamlined and reliable development process.
       image: image_gallery_hero.png
   ProjectBodyHighlight:
     primary:
       title: The Project
-      subtitle: Simple drinks library
+      subtitle: Main Features and Technologies
       content:  |
-              This project is built with React for creating reusable UI components, TypeScript for type safety and maintainability, and Radix UI for icons and additional UI elements, with styling handled using Tailwind CSS.
+              This application is powered by a modern tech stack that integrates the best frontend and backend technologies. The frontend utilizes React for building reusable UI components and TypeScript to ensure type safety and maintainable code. Tailwind CSS handles styling and layout management, while Radix UI provides accessible icons and components to enhance usability. For form handling and validation, Zod is employed to ensure robust schema management and user input verification.
+
+              On the backend, Supabase offers a comprehensive solution for user authentication, secure image storage, and database management with PostgreSQL. Real-time updates are enabled through WebSockets, ensuring users receive instant notifications and feedback. Additionally, the app employs tools like Webpack and Babel for code optimization and transpilation, while ESLint maintains code quality. Sonner manages error handling and warnings, ensuring a polished and reliable user experience.
       image: 'image_gallery_mbp_i.png'
     tools:
       - React
@@ -46,17 +48,10 @@ body:
       - Radix
   ProjectBodyConclusion:
     primary:
-      title:  Reflect
-      subtitle: Image Gallery and Editor
+      title: Reflect
+      subtitle: Conclusion
       content:  |
-        - Expertise in React and TypeScript for building scalable, maintainable applications.
-        - Practical experience with Supabase for user management and storage.
-        - Proficiency in responsive design principles for an optimal user experience.
-        - Knowledge of PostgreSQL for efficient database management.
-        - Understanding of WebSockets for implementing real-time updates.
-        - Mastery of Tailwind CSS for rapid styling and layout management.
-        - Familiarity with modern development tools, including Webpack, ESLint, and Zod.
-        - Experience with handling errors and warnings using Sonner.
+        The Image Gallery and Editor exemplifies expertise in full-stack development, blending cutting-edge technologies to create a scalable and user-friendly application. It highlights proficiency in tools like React, TypeScript, Zod, and Supabase, alongside an understanding of responsive design principles and real-time interactions. By incorporating CI/CD workflows with GitHub and Vercel, the project ensures efficient development and deployment cycles. This application demonstrates a strong command of modern web development practices, delivering a robust platform for image management with precision and reliability.
       image: 'image_gallery_mbp_ii.png'
 ---
 

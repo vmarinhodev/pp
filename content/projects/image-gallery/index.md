@@ -11,15 +11,15 @@ website:
   url: 'https://image-gallery-ten-tawny.vercel.app/'
 source:
   url: 'https://github.com/vmarinhodev/image-case'
-featureImage: 'desk_mixins.jpg'
+featureImage: 'image_gallery_desktop.png'
 tags:
   - Nextjs
   - Supabase
   - React
   - TypeScript
 highlights:
-  title: highlights title
-  tagline: highlights tagline
+  title: Seamless user authentication, efficient image storage, and real-time updates
+  tagline: A user-friendly interface for uploading, displaying, and editing images
 body:
   ProjectBodyIntro:
     primary:

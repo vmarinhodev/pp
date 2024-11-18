@@ -3,7 +3,7 @@ path: '/image-case'
 title: VMDev Gallery
 tagline: Image Gallery and Editor
 completed: "2024"
-order: "2"
+order: "8"
 personalproject: true
 client: ""
 role: Full Stck Developer

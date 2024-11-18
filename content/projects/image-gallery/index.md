@@ -27,14 +27,14 @@ body:
       subtitle: A scalable and maintainable frontend application
       content: |
                A web-based image gallery and editor application built using a modern tech stack, showcasing a user-friendly interface for uploading, displaying, and editing images. The application utilizes a grid-based layout to showcase images, with features such as image editing and updating using a file uploader form.
-      image: 'desk_mixins.jpg'
+      image: image_gallery_hero.png'
   ProjectBodyHighlight:
     primary:
       title: The Project
       subtitle: Simple drinks library
       content:  |
               This project is built with React for creating reusable UI components, TypeScript for type safety and maintainability, and Radix UI for icons and additional UI elements, with styling handled using Tailwind CSS.
-      image: 'mixins_per.jpg'
+      image: 'image_gallery_mbp_i.png'
     tools:
       - React
       - Nextjs
@@ -57,7 +57,7 @@ body:
         - Mastery of Tailwind CSS for rapid styling and layout management.
         - Familiarity with modern development tools, including Webpack, ESLint, and Zod.
         - Experience with handling errors and warnings using Sonner.
-      image: 'mixins_iso.jpg'
+      image: 'image_gallery_mbp_ii.png'
 ---
 
 ## A cocktails library project

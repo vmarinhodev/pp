@@ -40,7 +40,7 @@ body:
       - MySQL
   ProjectBodyConclusion:
     primary:
-      title: mountingplaque conclusion title
+      title: mountingplaque payment method
       subtitle: Full on Paypal
       content: and build with modern javascript using es6 npm babel and webpack
       image: 'longpage_mounting.png'

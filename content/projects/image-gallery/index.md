@@ -27,7 +27,7 @@ body:
       subtitle: A scalable and maintainable frontend application
       content: |
                A web-based image gallery and editor application built using a modern tech stack, showcasing a user-friendly interface for uploading, displaying, and editing images. The application utilizes a grid-based layout to showcase images, with features such as image editing and updating using a file uploader form.
-      image: image_gallery_hero.png'
+      image: image_gallery_hero.png
   ProjectBodyHighlight:
     primary:
       title: The Project

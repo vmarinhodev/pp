@@ -58,7 +58,7 @@ const ProjectConclusion = ({
           </ImageWrapper>
         </ImageContainer>
         <Container>
-          <GridFlex align="center" justify="space-between">
+          <GridFlex align="left" justify="space-between">
             <GridFlexItem md="7">
               <Title>{title}</Title>
               <h3>{subtitle}</h3>

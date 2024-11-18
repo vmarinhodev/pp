@@ -6,7 +6,7 @@ completed: "2024"
 order: "8"
 personalproject: true
 client: ""
-role: Full Stck Developer
+role: Full Stack Developer
 website:
   url: 'https://image-gallery-ten-tawny.vercel.app/'
 source:

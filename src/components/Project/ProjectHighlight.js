@@ -69,6 +69,7 @@ const ProjectHighlight = ({ details, variant }) => {
   const img = getImage(image)
 
   return (
+    <>
     <HighlightSection variant="mono">
       <ImageContainer size="large">
         <ImageWrapper>
@@ -81,7 +82,7 @@ const ProjectHighlight = ({ details, variant }) => {
         <GridFlex justify="center">{tools.map(renderTools)}</GridFlex>
       </SkillContainer>
       <Container>
-        <GridFlex align="center" justify="center">
+        <GridFlex justify="center">
           <GridFlexItem md="7">
             <Title>{title}</Title>
             <h3>{subtitle}</h3>
@@ -90,6 +91,7 @@ const ProjectHighlight = ({ details, variant }) => {
         </GridFlex>
       </Container>
     </HighlightSection>
+    </>
   )
 }
 

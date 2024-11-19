@@ -26,16 +26,22 @@ body:
       title: Image Gallery and Editor 
       subtitle: A scalable and maintainable frontend application
       content: |
-              The Image Gallery and Editor is a state-of-the-art web application designed to provide users with a seamless platform for uploading, displaying, and editing images. The app features a responsive grid-based layout, ensuring an optimal viewing experience on devices of all sizes. With an intuitive file uploader form, users can easily update or edit images. Built with scalability and maintainability in mind, the application incorporates advanced authentication, secure storage, and real-time updates to deliver a modern, user-centric solution. Continuous integration and deployment (CI/CD) pipelines, powered by GitHub and Vercel, ensure a streamlined and reliable development process.
+              The Image Gallery and Editor is a web application designed to provide users with a seamless platform for uploading, displaying, and editing images. The app features a responsive grid-based layout, ensuring an optimal viewing experience on devices of all sizes. With an intuitive file uploader form, users can easily update or edit images. Built with scalability and maintainability in mind, the application incorporates advanced authentication, secure storage, and real-time updates to deliver a modern, user-centric solution. Continuous integration and deployment (CI/CD) pipelines, powered by GitHub and Vercel, ensure a streamlined and reliable development process.
       image: image_gallery_hero.png
   ProjectBodyHighlight:
     primary:
       title: The Project
       subtitle: Main Features and Technologies
       content:  |
-              This application is powered by a modern tech stack that integrates the best frontend and backend technologies. The frontend utilizes React for building reusable UI components and TypeScript to ensure type safety and maintainable code. Tailwind CSS handles styling and layout management, while Radix UI provides accessible icons and components to enhance usability. For form handling and validation, Zod is employed to ensure robust schema management and user input verification.
+              ### Main Features and Technologies:
 
-              On the backend, Supabase offers a comprehensive solution for user authentication, secure image storage, and database management with PostgreSQL. Real-time updates are enabled through WebSockets, ensuring users receive instant notifications and feedback. Additionally, the app employs tools like Webpack and Babel for code optimization and transpilation, while ESLint maintains code quality. Sonner manages error handling and warnings, ensuring a polished and reliable user experience.
+This application is powered by a cutting-edge tech stack that integrates modern frontend and backend technologies to deliver a seamless and efficient user experience. The frontend leverages **React** for building reusable UI components and **TypeScript** to ensure type safety and maintainable code. **Next.js** serves as the framework, offering server-side rendering (SSR) and static site generation (SSG) for enhanced performance, scalability, and SEO optimization. **Tailwind CSS** manages styling and layout with ease, while **Radix UI** introduces accessible and customizable icons and components, improving the overall usability. For robust form validation and schema management, **Zod** ensures accurate user input handling and seamless form integration.
+
+On the backend, **Supabase** provides a comprehensive suite of tools, including user authentication, secure image storage, and database management powered by **PostgreSQL**. Real-time capabilities are implemented using **WebSockets**, enabling instant notifications and updates for users. To streamline development and production workflows, **Next.js** supports API routes for server-side logic and integrates seamlessly with Supabase to enhance the backend infrastructure.
+
+To further enhance the application, tools like **Webpack** and **Babel** are used for efficient bundling and transpilation of modern JavaScript. **ESLint** ensures code quality and consistency, while **Sonner** handles error reporting and warnings for a polished and reliable user experience. The application also incorporates continuous integration and deployment (CI/CD) pipelines using **GitHub** and **Vercel**, ensuring quick and automated updates with minimal downtime. 
+
+This robust combination of technologies ensures a high-performing, user-friendly, and maintainable application, optimized for modern web development needs.
       image: 'image_gallery_mbp_i.png'
     tools:
       - React

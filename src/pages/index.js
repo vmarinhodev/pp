@@ -25,7 +25,7 @@ const Index = ({ data: { projectos }}) => {
     <Layout>
       <Banner
         variant="mono"
-        title="I am a front end web developer & <span>more</span>"
+        title="I am a full stack web developer & <span>more</span>"
         subTitle="hello, world"
       >
         <h4>

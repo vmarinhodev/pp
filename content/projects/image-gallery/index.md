@@ -33,15 +33,13 @@ body:
       title: The Project
       subtitle: Main Features and Technologies
       content:  |
-              ### Main Features and Technologies:
+              This application is powered by a cutting-edge tech stack that integrates modern frontend and backend technologies to deliver a seamless and efficient user experience. The frontend leverages React for building reusable UI components and TypeScript to ensure type safety and maintainable code. Next.js serves as the framework, offering server-side rendering (SSR) and static site generation (SSG) for enhanced performance, scalability, and SEO optimization. Tailwind CSS manages styling and layout with ease, while Radix UI introduces accessible and customizable icons and components, improving the overall usability. For robust form validation and schema management, Zod ensures accurate user input handling and seamless form integration.
 
-This application is powered by a cutting-edge tech stack that integrates modern frontend and backend technologies to deliver a seamless and efficient user experience. The frontend leverages **React** for building reusable UI components and **TypeScript** to ensure type safety and maintainable code. **Next.js** serves as the framework, offering server-side rendering (SSR) and static site generation (SSG) for enhanced performance, scalability, and SEO optimization. **Tailwind CSS** manages styling and layout with ease, while **Radix UI** introduces accessible and customizable icons and components, improving the overall usability. For robust form validation and schema management, **Zod** ensures accurate user input handling and seamless form integration.
+              On the backend, Supabase provides a comprehensive suite of tools, including user authentication, secure image storage, and database management powered by PostgreSQL. Real-time capabilities are implemented using WebSockets, enabling instant notifications and updates for users. To streamline development and production workflows, Next.js supports API routes for server-side logic and integrates seamlessly with Supabase to enhance the backend infrastructure.
 
-On the backend, **Supabase** provides a comprehensive suite of tools, including user authentication, secure image storage, and database management powered by **PostgreSQL**. Real-time capabilities are implemented using **WebSockets**, enabling instant notifications and updates for users. To streamline development and production workflows, **Next.js** supports API routes for server-side logic and integrates seamlessly with Supabase to enhance the backend infrastructure.
+              To further enhance the application, tools like Webpack and Babel are used for efficient bundling and transpilation of modern JavaScript. ESLint ensures code quality and consistency, while Sonner handles error reporting and warnings for a polished and reliable user experience. The application also incorporates continuous integration and deployment (CI/CD) pipelines using GitHub and Vercel, ensuring quick and automated updates with minimal downtime.
 
-To further enhance the application, tools like **Webpack** and **Babel** are used for efficient bundling and transpilation of modern JavaScript. **ESLint** ensures code quality and consistency, while **Sonner** handles error reporting and warnings for a polished and reliable user experience. The application also incorporates continuous integration and deployment (CI/CD) pipelines using **GitHub** and **Vercel**, ensuring quick and automated updates with minimal downtime. 
-
-This robust combination of technologies ensures a high-performing, user-friendly, and maintainable application, optimized for modern web development needs.
+              This robust combination of technologies ensures a high-performing, user-friendly, and maintainable application, optimized for modern web development needs.
       image: 'image_gallery_mbp_i.png'
     tools:
       - React

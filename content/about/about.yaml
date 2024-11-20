@@ -3,23 +3,33 @@
     - heading:  Thanks for visiting 
       title:  A little about myself
       content:  |
-              I am a Front End and UI/UX Developer, Accessibility advocate, JAMStack fan.
-              Focused on turning ideas into practical software.
-              I'm passionate about creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
-
-              From 2020 to 2023, I worked as a front-end developer for UW-S, where I contributed to the development of an in-house narrowcasting system utilized across multiple supermarket brands in the Netherlands.
-              In this role, I employed technologies such as React and NPM to enhance the user experience and deliver high-quality digital solutions.
+              I am a Full-Stack Developer with a strong focus on accessibility, intuitive design, and turning ideas into practical, user-centered software.
+              As a passionate advocate for seamless user experiences, I specialize in crafting interactive, high-performance front ends and scalable back-end solutions using the latest technologies and methodologies.
+              My work is driven by a commitment to building intuitive interfaces that balance functionality, accessibility, and aesthetics.
               
-              After graduating from SAE Institute, London (Middlesex University) in 2015 with a B.A. Hons in Web Development, I started working at AmeTrade where I've been working as a Full-Stack (LAMP Stack) developer for over 4 years.
-              During my time there, I have worked with different languages, technologies and platforms.
-
-    - heading:  Front End development
+              In my most recent role as a Front-End Developer at UW-S, where I worked for 4 years, I contributed to the development of an in-house narrowcasting system used across multiple supermarket brands in the Netherlands.
+              This project allowed me to leverage technologies like React, TypeScript, and Vite to create dynamic, scalable interfaces and optimize the user experience across a broad audience.
+              My contributions helped deliver a reliable and high-quality digital solution for a complex, multi-brand ecosystem.
+              
+              Earlier in my career, after graduating in 2015 with a B.A. Hons in Web Development from SAE Institute, London (Middlesex University), I worked as a Full-Stack Developer at AmeTrade for over four years.
+              During this time, I gained experience with a diverse range of technologies and platforms, developing web applications using the LAMP stack and gaining valuable insights into full-stack workflows.
+              
+    - heading:  Full Stack development
       title:  Skills & Tools 
       content:  |
-              I currently work with a variety of languages and frameworks including JavaScript, React, Redux, Gatsby, Primisc and Wordpress.
-              This portfolio is a static PWA (Progressive Web App) developed with Gatsby, optimised for a fast page load, hosted on Netlify.
+              Currently, I work with a modern tech stack that includes JavaScript, React, Next.js, Redux, Tailwind CSS, Radix UI, and TypeScript. I also have experience with Supabase for authentication and storage, Zod for form validation, and WebSockets for real-time interactions.
               
-              My most current interests include: Serveless Stack, Docker, Kubernetes and Microservices.
+              My expertise extends to headless CMS platforms like Strapi for building dynamic content systems and back-end solutions powered by MongoDB and PostgreSQL.
+              
+              Additionally, I use tools like ESLint and Webpack to maintain optimized and clean codebases.
+              This portfolio itself is a static Progressive Web App (PWA), built using Gatsby for its superior performance and static site generation capabilities, hosted on Netlify with optimized workflows for fast, reliable delivery.
+
+              My recent work reflects my growing interest in headless CMS solutions and CI/CD pipelines powered by platforms like Vercel and Netlify.
+              
+              I am passionate about leveraging these tools to streamline deployment workflows, deliver high-performing applications, and ensure scalability across diverse projects.
+              
+              Staying at the forefront of modern development practices remains a top priority as I continue to refine my craft and deliver impactful digital experiences.
+
   hobbies:  
     - heading:  Interests
       title:    Arts & Crafts
@@ -36,7 +46,7 @@
                 Elvira, the motorcycle (named after my Grandmother) was designed and built by my Father and myself.
 
                 I lived in London, United Kingdom for over 15 years and moved to Den Haag, The Netherlands at the beginning of 2020. 
-                When not sitting at the desk I enjoy watching car shows "GYSOT".
+                When not sitting at the desk I enjoy live music or just watching car shows "GYSOT".
       image:  "./vmhobbiel.jpg"
   title:  Hi there!
   tagline:  Nice to meet you

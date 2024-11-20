@@ -3,10 +3,8 @@
     - heading:  Present
       title:  What I am Doing at the moment
       content:  |
-              At the present moment I am a Front End Developer for UW-S, turning ideas into practical software.
-              I've been part of the UW-s team since 2020, creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
+              At the present moment I am a Full Stack developer, turning ideas into practical software while creating intuitive and compelling interfaces and developing fast interactive front ends, using the latest technologies and techniques.
               
-              As a React frontend developer, I create and maintain the user interface of web applications using React.
               My role involves transforming design mockups and wireframes into functional, efficient, and visually appealing components.
               I work closely with designers to ensure the user interface aligns with the intended user experience and design specifications.
               
@@ -26,13 +24,21 @@
               I manage and track changes using version control systems like Git and may also be involved in deploying front-end applications using CI/CD pipelines.
               
               Overall, my role as a React frontend developer is to create high-quality, performant, and user-friendly web applications that meet the needs of users and stakeholders alike.
-    - heading:  OctoCast
-      title:  Narrowcasting Software
+    - heading:  Stack
+      title:  A modern full stack
       content:  |
-              OctoCast is an innovative CMS that gives you control over a narrowcasting setup, whether it concerns one screen or hundreds.
-              Rights management gives users the opportunity to post messages nationally, regionally or locally.
-              For example, a head office can post nationally, while an entrepreneur with OctoCast can easily independently create and place local messages for his store.
-              Naturally, our software is prepared for any desired screen size and video resolution.
+              In my projects, I leverage a comprehensive suite of modern tools and technologies to create scalable, efficient, and user-friendly applications. Utilizing frameworks like Next.js for server-side rendering (SSR) and static generation, paired with React and TypeScript, I build robust front-end experiences that are both interactive and maintainable.
+              
+              Styling is handled with Tailwind CSS and shadcn, ensuring visually appealing, accessible designs, while Zod and React Form streamline form validation and schema management. 
+              
+              On the back end, I work with Supabase, PostgreSQL, and MongoDB to manage authentication, databases, and storage efficiently.
+              For state management and data fetching, I rely on tools like Redux, TanStack Query, and Axios to deliver seamless and real-time user experiences.
+              
+              My projects are structured with routers, high-order components, and React Hooks, allowing for modular and reusable code.
+              Using platforms like Vercel and GitHub for CI/CD pipelines, I ensure smooth deployment workflows and maintain code integrity through Git version control.
+              
+              I adhere to Agile and Scrum methodologies to deliver features iteratively, with a focus on responsiveness and cross-device compatibility in all my designs.
+              This tech stack enables me to create efficient, scalable, and modern solutions for diverse development challenges.
   hobbies:  
     - heading:  Kids Club
       title:    Games & Crafts
@@ -47,6 +53,6 @@
                 UW-S creates communication solutions that are innovative in development, creative in concept, strong in content and off the beaten track.
                  The company help supermarkets distinguish themselves locally through the combined power of digital in-store communication, local knowledge and relevant content.
       image:  "./octocast_hero_1.png"
-  title:  UW-S
-  tagline:  Frontend Developer
+  title:  Modern Development
+  tagline:  Full Stack Developer
 ...

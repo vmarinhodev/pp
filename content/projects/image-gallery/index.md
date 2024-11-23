@@ -59,5 +59,3 @@ body:
       image: 'image_gallery_mbp_ii.png'
 ---
 
-## A cocktails library project
-
